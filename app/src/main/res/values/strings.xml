@@ -1,0 +1,137 @@
+    <resources>
+        <color name="textcolor">#f905f5</color><style name="AppTheme" parent="@style/AppBaseTheme"></style>
+	<string-array name="comp_array">
+            <item>recompile</item>
+            <item>browse</item><item>cancel</item>
+            
+            
+        </string-array><string-array name="dec_array">
+            <item>decompile all</item>
+            <item>decompile dex</item>
+            <item>decompile resources</item>
+            <item>sign apk</item>
+            <item>make odex</item>
+            <item>zipalign </item>
+            <item>install</item>
+            <item>delete dex of a apk</item>
+            <item>extract META-INF </item><item>delete META-INF in apk</item>
+            <item>add META-INF to apk</item>
+
+            <item>import as framework</item>
+        <item >dex2jar</item>
+        <item >jar2dex</item>
+        <item >decompile jar (jd-cli)</item>
+        <item >decompile jar (CFR --rename)</item>
+        <item >decompile jar (Procyon)</item>
+        <item >decompile jar (Fernflower)</item>
+        <item >decompile jar (jadx)</item>
+        <item >decompile jar (Krakatau)</item>
+        <item>cancel</item>
+            
+            
+            
+        </string-array><string-array name="decdex_array">
+            <item>decompile</item>
+            <item>add to apkfile with same name</item><item>add to jarfile with same name</item>
+            <item>cancel</item>
+            
+        </string-array><string-array name="deodex_array">
+            <item>decompile</item>
+            <item>cancel</item>
+        </string-array><string-array name="longpress_array">
+            <item>rename</item>
+            <item>delete</item>
+            <item>get browse permission(root) </item><item >set as apktool data folder</item><item>cancel</item>
+            
+            
+        </string-array><string-array name="repackimg">
+            <item>compress(only for mt65xx)</item>
+            <item>compress(common)</item>
+            <item>browse</item>
+            <item>cancel</item>
+        </string-array><string-array name="Task">
+            <item>Task1</item>
+            <item>Task2</item>
+            <item>Task3</item>
+            <item>Task4</item>
+        </string-array><string-array name="unpackimg">
+            <item>extract(only for mt65xx,need root)</item>
+            <item>extract(common,need root)</item>
+            <item>cancel</item>
+        </string-array><string name="about">About</string><string name="add_finish">add finish</string><string name="adding">adding...</string><string name="align_finish">align finish</string><string name="aligning">aligning...</string><string name="apk_not_exist">apk with same name not found.</string><string name="app_name">Apktool</string>
+        <string name="cancel">cancel</string><string name="compressing">compressing...</string><string name="copy">copy to clipboard</string><string name="cost_time">cost time:</string><string name="declaration">declaration</string><string name="decompile_all_finish">decompile finish</string><string name="decompile_dex_finish">decompile dex finish</string><string name="decompile_odex_finish">decompile odex finish</string><string name="decompile_res_finish">decompile reources finish</string><string name="decompiling">decompiling...</string><string name="delete_finish">delete finish</string><string name="deleting">deleting...</string><string name="dir_exist">META-INF dir exists in current path, please delete it first</string><string name="dir_not_exist">META-INF dir not exists in current path</string><string name="extracting">extracting...</string><string name="hour">hour(s)</string>
+        <string name="decompile_jar_finish" translatable="false">decompile_jar_finish></string>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <string name="import_finish">import finish</string><string name="importing_framework">importing framework...</string><string name="jar_not_exist">jar with same name not found.</string><string name="keep_screen_on">keep screen on</string><string name="making">making...</string><string name="minute">minute(s)</string><string name="never_remind">never remind</string><string name="new_name">new name:</string><string name="notify">notify after operation</string><string name="ok">OK</string><string name="op_done">operate finish</string>
+        <string name="put_background">put into background</string><string name="recompile_finish">recompile finish</string><string name="recompiling">recompiling...</string><string name="second">second(s)</string>
+        
+        
+        
+        <string name="setting">Settings</string><string name="sign_finish">sign finish</string>
+        
+        <string name="signing">singning...</string>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <string name="vibration">vibrate after operation</string><string name="want_to_delete">delete?</string>
+        
+        
+        
+        
+        <string name="want_to_exit">exit?</string>
+        <string name="white_background">white background</string><string name="yes">yes</string>
+        <string name="no">no</string>
+        
+        <string name="nofreetask">Have run max tasks</string>
+        <string name="cur_task_not_run">This task is not running.</string>
+        
+        <string name="agreement">This is a personal software and does not have any warranty. Use it at your own risk.</string>
+        <string name="directory_no_permission">no permission to access this folder</string>
+        <string name="warning">Warning</string>
+        <string name="data_not_in_sdcard">Could not find program data in /sdcard,if you have put it in a different path,please long press the &quot;apktool&quot; folder and select &quot;set as apktool data folder&quot; before any operation.</string>
+        <string name="wrap_msg">wrap output msg</string>
+        <string-array name="java">
+            <item >compile</item>
+            <item >return</item>
+        </string-array>
+        <string-array name="Class">
+            <item >run</item>
+            <item >return</item>
+        </string-array>
+        <string name="running">Running...</string>
+        <string name="make_rom">This is a testing function,which aims at making a update.zip for recovery. Put boot.img in apktool data folder if you want to add it. When the operation has finished, a folder named rom will be created in apktool data folder.Maybe you need to edit META-INF/com/google/androd/updater-script.You need to create update.zip youself.Just zip all files in rom folder.</string>
+        <string name="making_rom">ROM making,will take some time...</string>
+        
+        
+        
+        
+        
+        
+    </resources>

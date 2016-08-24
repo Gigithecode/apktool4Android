@@ -1,0 +1,1336 @@
+[
+    {
+        "outputFile": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\build\\intermediates\\res\\merged\\debug\\values-zh-rCN\\values-zh-rCN.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 5,
+                    "endColumn": 23,
+                    "endOffset": 162
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 118,
+                        "startColumn": 8,
+                        "startOffset": 4905,
+                        "endLine": 121,
+                        "endColumn": 23,
+                        "endOffset": 5014
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 167,
+                    "endLine": 11,
+                    "endColumn": 23,
+                    "endOffset": 333
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 8,
+                        "startOffset": 1844,
+                        "endLine": 60,
+                        "endColumn": 23,
+                        "endOffset": 2010
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 338,
+                    "endLine": 17,
+                    "endColumn": 23,
+                    "endOffset": 491
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 1,
+                        "startOffset": 184,
+                        "endLine": 10,
+                        "endColumn": 23,
+                        "endOffset": 337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 496,
+                    "endLine": 34,
+                    "endColumn": 23,
+                    "endOffset": 1053
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 23,
+                        "startOffset": 337,
+                        "endLine": 26,
+                        "endOffset": 909
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1058,
+                    "endLine": 40,
+                    "endColumn": 23,
+                    "endOffset": 1233
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 8,
+                        "startOffset": 1053,
+                        "endLine": 37,
+                        "endColumn": 23,
+                        "endOffset": 1232
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 1238,
+                    "endLine": 44,
+                    "endColumn": 23,
+                    "endOffset": 1353
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 8,
+                        "startOffset": 927,
+                        "endLine": 31,
+                        "endColumn": 23,
+                        "endOffset": 1044
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 1358,
+                    "endLine": 48,
+                    "endColumn": 23,
+                    "endOffset": 1464
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 114,
+                        "startColumn": 8,
+                        "startOffset": 4788,
+                        "endLine": 117,
+                        "endColumn": 23,
+                        "endOffset": 4896
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 1469,
+                    "endLine": 55,
+                    "endColumn": 23,
+                    "endOffset": 1692
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 23,
+                        "startOffset": 1232,
+                        "endLine": 43,
+                        "endOffset": 1460
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 1697,
+                    "endLine": 61,
+                    "endColumn": 23,
+                    "endOffset": 1886
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 8,
+                        "startOffset": 1642,
+                        "endLine": 54,
+                        "endColumn": 23,
+                        "endOffset": 1835
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 1891,
+                    "endLine": 66,
+                    "endColumn": 23,
+                    "endOffset": 2052
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 8,
+                        "startOffset": 1469,
+                        "endLine": 48,
+                        "endColumn": 23,
+                        "endOffset": 1633
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 2057,
+                    "endColumn": 43,
+                    "endOffset": 2096
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 8,
+                        "startOffset": 74,
+                        "endColumn": 47,
+                        "endOffset": 113
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 2101,
+                    "endColumn": 38,
+                    "endOffset": 2135
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 99,
+                        "startColumn": 8,
+                        "startOffset": 4036,
+                        "endColumn": 42,
+                        "endOffset": 4070
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 2140,
+                    "endColumn": 44,
+                    "endOffset": 2180
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 8,
+                        "startOffset": 2816,
+                        "endColumn": 48,
+                        "endOffset": 2856
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 2185,
+                    "endColumn": 42,
+                    "endOffset": 2223
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 8,
+                        "startOffset": 3239,
+                        "endColumn": 46,
+                        "endOffset": 3277
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 2228,
+                    "endColumn": 54,
+                    "endOffset": 2278
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 109,
+                        "startColumn": 8,
+                        "startOffset": 4459,
+                        "endColumn": 58,
+                        "endOffset": 4509
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 2283,
+                    "endColumn": 46,
+                    "endOffset": 2325
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 8,
+                        "startOffset": 2713,
+                        "endColumn": 50,
+                        "endOffset": 2755
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 2330,
+                    "endColumn": 44,
+                    "endOffset": 2370
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 8,
+                        "startOffset": 3022,
+                        "endColumn": 48,
+                        "endOffset": 3062
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 2375,
+                    "endColumn": 53,
+                    "endOffset": 2424
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 89,
+                        "startColumn": 8,
+                        "startOffset": 3473,
+                        "endColumn": 57,
+                        "endOffset": 3522
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 2429,
+                    "endColumn": 44,
+                    "endOffset": 2469
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 8,
+                        "startOffset": 25,
+                        "endColumn": 48,
+                        "endOffset": 65
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 2474,
+                    "endColumn": 37,
+                    "endOffset": 2507
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 8,
+                        "startOffset": 3634,
+                        "endColumn": 41,
+                        "endOffset": 3667
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 2512,
+                    "endColumn": 47,
+                    "endOffset": 2555
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 93,
+                        "startColumn": 8,
+                        "startOffset": 3718,
+                        "endColumn": 51,
+                        "endOffset": 3761
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 2560,
+                    "endColumn": 35,
+                    "endOffset": 2591
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 8,
+                        "startOffset": 2266,
+                        "endColumn": 39,
+                        "endOffset": 2297
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 2596,
+                    "endColumn": 46,
+                    "endOffset": 2638
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 8,
+                        "startOffset": 2056,
+                        "endColumn": 50,
+                        "endOffset": 2098
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 2643,
+                    "endColumn": 53,
+                    "endOffset": 2692
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 107,
+                        "startColumn": 8,
+                        "startOffset": 4392,
+                        "endColumn": 57,
+                        "endOffset": 4441
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 2697,
+                    "endColumn": 106,
+                    "endOffset": 2799
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 112,
+                        "startColumn": 8,
+                        "startOffset": 4627,
+                        "endColumn": 110,
+                        "endOffset": 4729
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 2804,
+                    "endColumn": 44,
+                    "endOffset": 2844
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 95,
+                        "startColumn": 8,
+                        "startOffset": 3863,
+                        "endColumn": 48,
+                        "endOffset": 3903
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 2849,
+                    "endColumn": 55,
+                    "endOffset": 2900
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 8,
+                        "startOffset": 2306,
+                        "endColumn": 59,
+                        "endOffset": 2357
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 2905,
+                    "endColumn": 58,
+                    "endOffset": 2959
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 8,
+                        "startOffset": 2471,
+                        "endColumn": 62,
+                        "endOffset": 2525
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 2964,
+                    "endColumn": 60,
+                    "endOffset": 3020
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 8,
+                        "startOffset": 2596,
+                        "endColumn": 64,
+                        "endOffset": 2652
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 3025,
+                    "endColumn": 57,
+                    "endOffset": 3078
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 8,
+                        "startOffset": 2534,
+                        "endColumn": 61,
+                        "endOffset": 2587
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 3083,
+                    "endColumn": 48,
+                    "endOffset": 3127
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 8,
+                        "startOffset": 2874,
+                        "endColumn": 52,
+                        "endOffset": 2918
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 3132,
+                    "endColumn": 47,
+                    "endOffset": 3175
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 8,
+                        "startOffset": 2764,
+                        "endColumn": 51,
+                        "endOffset": 2807
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 3180,
+                    "endColumn": 44,
+                    "endOffset": 3220
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 82,
+                        "startColumn": 8,
+                        "startOffset": 3071,
+                        "endColumn": 48,
+                        "endOffset": 3111
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 3225,
+                    "endColumn": 63,
+                    "endOffset": 3284
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 8,
+                        "startOffset": 3171,
+                        "endColumn": 67,
+                        "endOffset": 3230
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 3289,
+                    "endColumn": 61,
+                    "endOffset": 3346
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 86,
+                        "startColumn": 8,
+                        "startOffset": 3286,
+                        "endColumn": 65,
+                        "endOffset": 3343
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 3351,
+                    "endColumn": 60,
+                    "endOffset": 3407
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 8,
+                        "startOffset": 4518,
+                        "endColumn": 64,
+                        "endOffset": 4574
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 3412,
+                    "endColumn": 46,
+                    "endOffset": 3454
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 83,
+                        "startColumn": 8,
+                        "startOffset": 3120,
+                        "endColumn": 50,
+                        "endOffset": 3162
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 3459,
+                    "endColumn": 34,
+                    "endOffset": 3489
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 8,
+                        "startOffset": 2107,
+                        "endColumn": 38,
+                        "endOffset": 2137
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 3494,
+                    "endColumn": 47,
+                    "endOffset": 3537
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 8,
+                        "startOffset": 2661,
+                        "endColumn": 51,
+                        "endOffset": 2704
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 3542,
+                    "endColumn": 64,
+                    "endOffset": 3602
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 87,
+                        "startColumn": 8,
+                        "startOffset": 3352,
+                        "endColumn": 68,
+                        "endOffset": 3412
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 3607,
+                    "endColumn": 53,
+                    "endOffset": 3656
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 90,
+                        "startColumn": 8,
+                        "startOffset": 3531,
+                        "endColumn": 57,
+                        "endOffset": 3580
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 3661,
+                    "endColumn": 47,
+                    "endOffset": 3704
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 8,
+                        "startOffset": 4278,
+                        "endColumn": 51,
+                        "endOffset": 4321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 3709,
+                    "endColumn": 221,
+                    "endOffset": 3926
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 123,
+                        "startColumn": 8,
+                        "startOffset": 5070,
+                        "endColumn": 225,
+                        "endOffset": 5287
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 3931,
+                    "endColumn": 42,
+                    "endOffset": 3969
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 8,
+                        "startOffset": 2975,
+                        "endColumn": 46,
+                        "endOffset": 3013
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 3974,
+                    "endColumn": 54,
+                    "endOffset": 4024
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 124,
+                        "startColumn": 8,
+                        "startOffset": 5296,
+                        "endColumn": 58,
+                        "endOffset": 5346
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 4029,
+                    "endColumn": 36,
+                    "endOffset": 4061
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 8,
+                        "startOffset": 2146,
+                        "endColumn": 40,
+                        "endOffset": 2178
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 4066,
+                    "endColumn": 45,
+                    "endOffset": 4107
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 8,
+                        "startOffset": 3770,
+                        "endColumn": 49,
+                        "endOffset": 3811
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 4112,
+                    "endColumn": 40,
+                    "endOffset": 4148
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 91,
+                        "startColumn": 8,
+                        "startOffset": 3589,
+                        "endColumn": 44,
+                        "endOffset": 3625
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 4153,
+                    "endColumn": 32,
+                    "endOffset": 4181
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 98,
+                        "startColumn": 8,
+                        "startOffset": 3999,
+                        "endColumn": 36,
+                        "endOffset": 4027
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 4186,
+                    "endColumn": 48,
+                    "endOffset": 4230
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 106,
+                        "startColumn": 8,
+                        "startOffset": 4339,
+                        "endColumn": 52,
+                        "endOffset": 4383
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 4235,
+                    "endColumn": 44,
+                    "endOffset": 4275
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 8,
+                        "startOffset": 4175,
+                        "endColumn": 48,
+                        "endOffset": 4215
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 4280,
+                    "endColumn": 33,
+                    "endOffset": 4309
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 8,
+                        "startOffset": 2228,
+                        "endColumn": 37,
+                        "endOffset": 2257
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 4314,
+                    "endColumn": 41,
+                    "endOffset": 4351
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 23,
+                        "startOffset": 2010,
+                        "endColumn": 60,
+                        "endOffset": 2047
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 4356,
+                    "endColumn": 47,
+                    "endOffset": 4399
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 49,
+                        "startOffset": 3811,
+                        "endColumn": 92,
+                        "endOffset": 3854
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 4404,
+                    "endColumn": 50,
+                    "endOffset": 4450
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 69,
+                        "startColumn": 8,
+                        "startOffset": 2416,
+                        "endColumn": 54,
+                        "endOffset": 2462
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 4455,
+                    "endColumn": 47,
+                    "endOffset": 4498
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 8,
+                        "startOffset": 3421,
+                        "endColumn": 51,
+                        "endOffset": 3464
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 4503,
+                    "endColumn": 42,
+                    "endOffset": 4541
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 122,
+                        "startColumn": 8,
+                        "startOffset": 5023,
+                        "endColumn": 46,
+                        "endOffset": 5061
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 4546,
+                    "endColumn": 36,
+                    "endOffset": 4578
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 64,
+                        "startColumn": 8,
+                        "startOffset": 2187,
+                        "endColumn": 40,
+                        "endOffset": 2219
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 4583,
+                    "endColumn": 40,
+                    "endOffset": 4619
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 8,
+                        "startOffset": 4130,
+                        "endColumn": 44,
+                        "endOffset": 4166
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 4624,
+                    "endColumn": 45,
+                    "endOffset": 4665
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 8,
+                        "startOffset": 2366,
+                        "endColumn": 49,
+                        "endOffset": 2407
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 4670,
+                    "endColumn": 43,
+                    "endOffset": 4709
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 8,
+                        "startOffset": 2927,
+                        "endColumn": 47,
+                        "endOffset": 2966
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 4714,
+                    "endColumn": 46,
+                    "endOffset": 4756
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 100,
+                        "startColumn": 8,
+                        "startOffset": 4079,
+                        "endColumn": 50,
+                        "endOffset": 4121
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 4761,
+                    "endColumn": 46,
+                    "endOffset": 4803
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 41,
+                        "startOffset": 3667,
+                        "endColumn": 83,
+                        "endOffset": 3709
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 4808,
+                    "endColumn": 44,
+                    "endOffset": 4848
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 8,
+                        "startOffset": 3912,
+                        "endColumn": 48,
+                        "endOffset": 3952
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 4853,
+                    "endColumn": 39,
+                    "endOffset": 4888
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 111,
+                        "startColumn": 8,
+                        "startOffset": 4583,
+                        "endColumn": 43,
+                        "endOffset": 4618
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 4893,
+                    "endColumn": 49,
+                    "endOffset": 4938
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 103,
+                        "startColumn": 8,
+                        "startOffset": 4224,
+                        "endColumn": 53,
+                        "endOffset": 4269
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 4943,
+                    "endColumn": 45,
+                    "endOffset": 4984
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 113,
+                        "startColumn": 8,
+                        "startOffset": 4738,
+                        "endColumn": 49,
+                        "endOffset": 4779
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 4989,
+                    "endColumn": 33,
+                    "endOffset": 5018
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 97,
+                        "startColumn": 8,
+                        "startOffset": 3961,
+                        "endColumn": 37,
+                        "endOffset": 3990
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 5023,
+                    "endColumn": 57,
+                    "endOffset": 5076
+                },
+                "from": {
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 8,
+                        "startOffset": 122,
+                        "endColumn": 68,
+                        "endOffset": 182
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res"/><source path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\build\generated\res\rs\debug"/><source path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\debug\res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res"><file name="file" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\file.png" qualifiers="hdpi-v4" type="drawable"/><file name="folder" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\folder.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_action_search" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\ic_action_search.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="odex" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\odex.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-ldpi\ic_launcher.png" qualifiers="ldpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="about" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\about.xml" qualifiers="" type="layout"/><file name="list_item" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml" qualifiers="" type="layout"/><file name="main" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\main.xml" qualifiers="" type="layout"/><file name="menu" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml" qualifiers="" type="menu"/><file name="menu" path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml" qualifiers="zh-rCN" type="menu"/><file path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml" qualifiers=""><string name="decompile_dex_finish">decompile dex finish</string><string name="data_not_in_sdcard">Could not find program data in /sdcard,if you have put it in a different path,please long press the "apktool" folder and select "set as apktool data folder" before any operation.</string><string name="running">Running...</string><string name="apk_not_exist">apk with same name not found.</string><string name="white_background">white background</string><string name="put_background">put into background</string><string-array name="java">
+            <item>compile</item>
+            <item>return</item>
+        </string-array><string-array name="unpackimg">
+            <item>extract(only for mt65xx,need root)</item>
+            <item>extract(common,need root)</item>
+            <item>cancel</item>
+        </string-array><string name="dir_exist">META-INF dir exists in current path, please delete it first</string><string name="adding">adding...</string><string-array name="Task">
+            <item>Task1</item>
+            <item>Task2</item>
+            <item>Task3</item>
+            <item>Task4</item>
+        </string-array><string-array name="longpress_array">
+            <item>rename</item>
+            <item>delete</item>
+            <item>get browse permission(root) </item><item>set as apktool data folder</item><item>cancel</item>
+            
+            
+        </string-array><string name="import_finish">import finish</string><string name="align_finish">align finish</string><string name="op_done">operate finish</string><string-array name="repackimg">
+            <item>compress(only for mt65xx)</item>
+            <item>compress(common)</item>
+            <item>browse</item>
+            <item>cancel</item>
+        </string-array><string name="notify">notify after operation</string><string name="want_to_delete">delete?</string><string name="nofreetask">Have run max tasks</string><string name="second">second(s)</string><string name="cancel">cancel</string><color name="textcolor">#f905f5</color><string name="make_rom">This is a testing function,which aims at making a update.zip for recovery. Put boot.img in apktool data folder if you want to add it. When the operation has finished, a folder named rom will be created in apktool data folder.Maybe you need to edit META-INF/com/google/androd/updater-script.You need to create update.zip youself.Just zip all files in rom folder.</string><string name="ok">OK</string><string-array name="Class">
+            <item>run</item>
+            <item>return</item>
+        </string-array><string-array name="comp_array">
+            <item>recompile</item>
+            <item>browse</item><item>cancel</item>
+            
+            
+        </string-array><string name="compressing">compressing...</string><string name="cost_time">cost time:</string><string name="importing_framework">importing framework...</string><style name="AppTheme" parent="@style/AppBaseTheme"/><string name="new_name">new name:</string><string name="recompile_finish">recompile finish</string><string-array name="dec_array">
+            <item>decompile all</item>
+            <item>decompile dex</item>
+            <item>decompile resources</item>
+            <item>sign apk</item>
+            <item>make odex</item>
+            <item>zipalign </item>
+            <item>install</item>
+            <item>delete dex of a apk</item>
+            <item>extract META-INF </item><item>delete META-INF in apk</item>
+            <item>add META-INF to apk</item>
+
+            <item>import as framework</item>
+        <item>dex2jar</item>
+        <item>jar2dex</item>
+        <item>decompile jar (jd-cli)</item>
+        <item>decompile jar (CFR --rename)</item>
+        <item>decompile jar (Procyon)</item>
+        <item>decompile jar (Fernflower)</item>
+        <item>decompile jar (jadx)</item>
+        <item>decompile jar (Krakatau)</item>
+        <item>cancel</item>
+            
+            
+            
+        </string-array><string name="minute">minute(s)</string><string name="want_to_exit">exit?</string><string name="warning">Warning</string><string name="yes">yes</string><string name="dir_not_exist">META-INF dir not exists in current path</string><string name="no">no</string><string name="jar_not_exist">jar with same name not found.</string><string name="making">making...</string><string name="decompile_all_finish">decompile finish</string><string name="decompiling">decompiling...</string><string name="never_remind">never remind</string><string name="declaration">declaration</string><string name="signing">singning...</string><string-array name="deodex_array">
+            <item>decompile</item>
+            <item>cancel</item>
+        </string-array><string name="extracting">extracting...</string><string name="aligning">aligning...</string><string name="making_rom">ROM making,will take some time...</string><string name="about">About</string><string name="decompile_jar_finish" translatable="false">decompile_jar_finish></string><string name="sign_finish">sign finish</string><string name="keep_screen_on">keep screen on</string><string name="directory_no_permission">no permission to access this folder</string><string name="setting">Settings</string><string name="deleting">deleting...</string><string name="app_name">Apktool</string><string name="decompile_odex_finish">decompile odex finish</string><string name="delete_finish">delete finish</string><string name="hour">hour(s)</string><string name="vibration">vibrate after operation</string><string-array name="decdex_array">
+            <item>decompile</item>
+            <item>add to apkfile with same name</item><item>add to jarfile with same name</item>
+            <item>cancel</item>
+            
+        </string-array><string name="add_finish">add finish</string><string name="wrap_msg">wrap output msg</string><string name="decompile_res_finish">decompile reources finish</string><string name="cur_task_not_run">This task is not running.</string><string name="copy">copy to clipboard</string><string name="agreement">This is a personal software and does not have any warranty. Use it at your own risk.</string><string name="recompiling">recompiling...</string></file><file path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style></file><file path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style></file><file path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values-zh-rCN\strings.xml" qualifiers="zh-rCN"><string name="add_finish">添加完成！</string><string name="making_rom">制作中，可能需要一段时间。。。</string><string name="decompile_odex_finish">反编译odex完成！</string><string name="align_finish">优化完成！</string><string name="extracting">正在提取。。。</string><string name="minute">分</string><string name="new_name">新名称</string><string-array name="Task">
+            <item>任务一</item>
+            <item>任务二</item>
+            <item>任务三</item>
+            <item>任务四</item>
+        </string-array><string name="signing">正在签名。。。</string><string name="decompiling">正在反编译。。。</string><string name="cost_time">本次操作共耗时：</string><string-array name="comp_array">
+            <item>编译</item>
+            <item>浏览</item><item>返回</item>
+            
+            
+        </string-array><string name="directory_no_permission">当前路径无权访问</string><string-array name="dec_array">
+            <item>反编译全部</item>
+            <item>反编译dex</item>
+            <item>反编译资源</item>
+            <item>签名</item>
+            <item>生成odex</item>
+            <item>zipalign优化</item>
+            <item>安装</item>
+            <item>删除dex</item>
+            <item>提取签名(META-INF)</item><item>删除签名(META-INF)</item>
+            <item>添加签名(META-INF)</item>
+            
+            <item>做为framework导入</item><item>dex2jar</item><item>jar2dex</item><item>返回</item>
+            
+            
+            
+        </string-array><string name="copy">复制</string><string-array name="java">
+            <item>编译</item>
+            <item>返回</item>
+        </string-array><string name="adding">正在添加。。。</string><string name="delete_finish">删除完成！</string><string name="aligning">正在优化。。。</string><string name="wrap_msg">输出信息自动换行</string><string-array name="decdex_array">
+            <item>反编译</item>
+            <item>打包进同名apk文件</item><item>打包进同名jar文件</item>
+            <item>返回</item>
+
+        </string-array><string name="hour">时</string><string name="notify">操作完成通知栏提示</string><string name="apk_not_exist">不存在同名apk文件！</string><string name="making">正在生成。。。</string><string name="ok">确定</string><string name="import_finish">安装完成！</string><string name="dir_exist">当前目录已存在META-INF文件夹，请先删除之。</string><string-array name="longpress_array">
+            <item>重命名</item>
+            <item>删除</item>
+            <item>获取访问权限(root)</item><item>设为apktool数据目录</item><item>返回</item>
+            
+            
+        </string-array><string name="want_to_delete">删除？</string><string name="importing_framework">正在安装framework。。。</string><string-array name="Class">
+            <item>运行</item>
+            <item>返回</item>
+        </string-array><string name="agreement">本程序为个人作品，没有任何担保。</string><string name="decompile_all_finish">反编译完成！</string><string name="jar_not_exist">不存在同名jar文件！</string><string-array name="repackimg">
+            <item>打包-mt65xx(root)</item>
+            <item>打包-通用(root)</item>
+            <item>浏览</item>
+            <item>返回</item>
+        </string-array><string name="decompile_res_finish">反编译资源完成！</string><string name="declaration">作者声明</string><string name="never_remind">不再提醒</string><string name="op_done">操作完成！</string><string name="about">关于软件</string><string name="white_background">白色背景</string><string-array name="deodex_array">
+            <item>反编译</item>
+            <item>返回</item>
+        </string-array><string name="dir_not_exist">当前目录不存在META-INF文件夹！</string><string name="no">否</string><string name="compressing">正在打包。。。</string><string name="nofreetask">已达到最大任务数！</string><string name="keep_screen_on">屏幕常亮</string><string name="vibration">操作完成振动提示</string><string name="put_background">放入后台</string><string name="cur_task_not_run">当前任务未运行。</string><string name="data_not_in_sdcard">内存卡根目录未检测到apktool数据目录，您必须先找到apktool数据目录，长按选择“设为apktool数据目录”</string><color name="textcolor">#f905f5</color><string name="recompiling">正在编译。。。</string><style name="AppTheme" parent="@style/AppBaseTheme"/><string name="warning">警告！</string><string name="deleting">正在删除。。。</string><string name="cancel">取消</string><string name="app_name">Apktool</string><string name="second">秒</string><string name="want_to_exit">退出？</string><string name="sign_finish">签名完成！</string><string name="recompile_finish">编译完成！</string><string name="decompile_dex_finish">反编译dex完成！</string><string name="setting">个性配置</string><string name="running">运行中...</string><string name="make_rom">本功能为新功能，处于测试阶段。目的是自动提取本机ROM制作成刷机包，如果你想在刷机包中加入boot.img，请把它放到apktool数据目录。操作完成后将会在apktool数据目录生成rom文件夹，你可能需要手动修改一下rom/META-INF/com/google/android/updater-script文件。然后把rom目录所有文件打包为zip就是刷机包了。</string><string-array name="unpackimg">
+            <item>解包-mt65xx(root)</item>
+            <item>解包-通用(root)</item>
+            <item>返回</item>
+        </string-array><string name="yes">是</string></file></source><source path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\build\generated\res\rs\debug"/><source path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\debug\res"/></dataSet><mergedItems/></merger>

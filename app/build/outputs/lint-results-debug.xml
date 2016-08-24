@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 25.1.7">
+
+    <issue
+        id="InconsistentArrays"
+        severity="Warning"
+        message="Array `dec_array` has an inconsistent number of items (21 in `values\strings.xml`, 15 in `values-zh-rCN\strings.xml`)"
+        category="Correctness"
+        priority="7"
+        summary="Inconsistencies in array element counts"
+        explanation="When an array is translated in a different locale, it should normally have the same number of elements as the original array. When adding or removing elements to an array, it is easy to forget to update all the locales, and this lint warning finds inconsistencies like these.
+
+Note however that there may be cases where you really want to declare a different number of array items in each configuration (for example where the array represents available options, and those options differ for different layout orientations and so on), so use your own judgement to decide if this is really an error.
+
+You can suppress this error type if it finds false errors in your project."
+        errorLine1="        &lt;/string-array>&lt;string-array name=&quot;dec_array&quot;>"
+        errorLine2="                       ^">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="8"
+            column="24"/>
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values-zh-rCN\strings.xml"
+            line="11"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.
+
+To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="        android:targetSdkVersion=&quot;21&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\AndroidManifest.xml"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.
+
+To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="        targetSdkVersion 21"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\build.gradle"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Registered"
+        severity="Warning"
+        message="The `&lt;activity> per.pqy.apktool.About` is not registered in the manifest"
+        category="Correctness"
+        priority="6"
+        summary="Class is not registered in the manifest"
+        explanation="Activities, services and content providers should be registered in the `AndroidManifest.xml` file using `&lt;activity>`, `&lt;service>` and `&lt;provider>` tags.
+
+If your activity is simply a parent class intended to be subclassed by other &quot;real&quot; activities, make it an abstract class."
+        url="http://developer.android.com/guide/topics/manifest/manifest-intro.html"
+        urls="http://developer.android.com/guide/topics/manifest/manifest-intro.html"
+        errorLine1="public class About extends Activity"
+        errorLine2="             ~~~~~">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\java\per\pqy\apktool\About.java"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Registered"
+        severity="Warning"
+        message="The `&lt;activity> per.pqy.apktool.RunExec` is not registered in the manifest"
+        category="Correctness"
+        priority="6"
+        summary="Class is not registered in the manifest"
+        explanation="Activities, services and content providers should be registered in the `AndroidManifest.xml` file using `&lt;activity>`, `&lt;service>` and `&lt;provider>` tags.
+
+If your activity is simply a parent class intended to be subclassed by other &quot;real&quot; activities, make it an abstract class."
+        url="http://developer.android.com/guide/topics/manifest/manifest-intro.html"
+        urls="http://developer.android.com/guide/topics/manifest/manifest-intro.html"
+        errorLine1="public class RunExec extends Activity {"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\java\per\pqy\apktool\RunExec.java"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This `minSdkVersion` value (`8`) is not used; it is always overridden by the value specified in the Gradle build script (`8`)"
+        category="Correctness"
+        priority="4"
+        summary="Value overridden by Gradle build script"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="        android:minSdkVersion=&quot;8&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\AndroidManifest.xml"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This `targetSdkVersion` value (`21`) is not used; it is always overridden by the value specified in the Gradle build script (`21`)"
+        category="Correctness"
+        priority="4"
+        summary="Value overridden by Gradle build script"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="        android:targetSdkVersion=&quot;21&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\AndroidManifest.xml"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.
+
+There *are* cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="http://developer.android.com/training/multiscreen/screendensities.html"
+        urls="http://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;16dp&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.
+
+There *are* cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="http://developer.android.com/training/multiscreen/screendensities.html"
+        urls="http://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="             android:textSize=&quot;12dp&quot; />"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml"
+            line="38"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.
+
+There *are* cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="http://developer.android.com/training/multiscreen/screendensities.html"
+        urls="http://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="        android:textSize=&quot;15dp&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\main.xml"
+            line="13"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        severity="Warning"
+        message="&quot;youself&quot; is a common misspelling; did you mean &quot;yourself&quot; ?"
+        category="Correctness:Messages"
+        priority="7"
+        summary="Spelling error"
+        explanation="This check looks through the string definitions, and if it finds any words that look like likely misspellings, they are flagged."
+        errorLine1="        &lt;string name=&quot;make_rom&quot;>This is a testing function,which aims at making a update.zip for recovery. Put boot.img in apktool data folder if you want to add it. When the operation has finished, a folder named rom will be created in apktool data folder.Maybe you need to edit META-INF/com/google/androd/updater-script.You need to create update.zip youself.Just zip all files in rom folder.&lt;/string>"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                                ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="129"
+            column="353"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_action_search` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\ic_action_search.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.textcolor` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="        &lt;color name=&quot;textcolor&quot;>#f905f5&lt;/color>&lt;style name=&quot;AppTheme&quot; parent=&quot;@style/AppBaseTheme&quot;>&lt;/style>"
+        errorLine2="               ~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="2"
+            column="16"/>
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values-zh-rCN\strings.xml"
+            line="4"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="TypographyDashes"
+        severity="Warning"
+        message="Replace &quot;--&quot; with an &quot;em dash&quot; character (—, &amp;#8212;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Hyphen can be replaced with dash"
+        explanation="The &quot;n dash&quot; (–, &amp;#8211;) and the &quot;m dash&quot; (—, &amp;#8212;) characters are used for ranges (n dash) and breaks (m dash). Using these instead of plain hyphens can make text easier to read and your application will look more polished."
+        url="http://en.wikipedia.org/wiki/Dash"
+        urls="http://en.wikipedia.org/wiki/Dash"
+        errorLine1="        &lt;item >decompile jar (CFR --rename)&lt;/item>"
+        errorLine2="               ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="24"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="        &lt;/string-array>&lt;string name=&quot;about&quot;>About&lt;/string>&lt;string name=&quot;add_finish&quot;>add finish&lt;/string>&lt;string name=&quot;adding&quot;>adding...&lt;/string>&lt;string name=&quot;align_finish&quot;>align finish&lt;/string>&lt;string name=&quot;aligning&quot;>aligning...&lt;/string>&lt;string name=&quot;apk_not_exist&quot;>apk with same name not found.&lt;/string>&lt;string name=&quot;app_name&quot;>Apktool&lt;/string>"
+        errorLine2="                                                                                                                             ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="61"
+            column="126"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="        &lt;string name=&quot;cancel&quot;>cancel&lt;/string>&lt;string name=&quot;compressing&quot;>compressing...&lt;/string>&lt;string name=&quot;copy&quot;>copy to clipboard&lt;/string>&lt;string name=&quot;cost_time&quot;>cost time:&lt;/string>&lt;string name=&quot;declaration&quot;>declaration&lt;/string>&lt;string name=&quot;decompile_all_finish&quot;>decompile finish&lt;/string>&lt;string name=&quot;decompile_dex_finish&quot;>decompile dex finish&lt;/string>&lt;string name=&quot;decompile_odex_finish&quot;>decompile odex finish&lt;/string>&lt;string name=&quot;decompile_res_finish&quot;>decompile reources finish&lt;/string>&lt;string name=&quot;decompiling&quot;>decompiling...&lt;/string>&lt;string name=&quot;delete_finish&quot;>delete finish&lt;/string>&lt;string name=&quot;deleting&quot;>deleting...&lt;/string>&lt;string name=&quot;dir_exist&quot;>META-INF dir exists in current path, please delete it first&lt;/string>&lt;string name=&quot;dir_not_exist&quot;>META-INF dir not exists in current path&lt;/string>&lt;string name=&quot;extracting&quot;>extracting...&lt;/string>&lt;string name=&quot;hour&quot;>hour(s)&lt;/string>"
+        errorLine2="                                                                        ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="62"
+            column="73"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="        &lt;string name=&quot;import_finish&quot;>import finish&lt;/string>&lt;string name=&quot;importing_framework&quot;>importing framework...&lt;/string>&lt;string name=&quot;jar_not_exist&quot;>jar with same name not found.&lt;/string>&lt;string name=&quot;keep_screen_on&quot;>keep screen on&lt;/string>&lt;string name=&quot;making&quot;>making...&lt;/string>&lt;string name=&quot;minute&quot;>minute(s)&lt;/string>&lt;string name=&quot;never_remind&quot;>never remind&lt;/string>&lt;string name=&quot;new_name&quot;>new name:&lt;/string>&lt;string name=&quot;notify&quot;>notify after operation&lt;/string>&lt;string name=&quot;ok&quot;>OK&lt;/string>&lt;string name=&quot;op_done&quot;>operate finish&lt;/string>"
+        errorLine2="                                                                                              ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="73"
+            column="95"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="        &lt;string name=&quot;put_background&quot;>put into background&lt;/string>&lt;string name=&quot;recompile_finish&quot;>recompile finish&lt;/string>&lt;string name=&quot;recompiling&quot;>recompiling...&lt;/string>&lt;string name=&quot;second&quot;>second(s)&lt;/string>"
+        errorLine2="                                                                                                                                                      ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="74"
+            column="151"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="        &lt;string name=&quot;signing&quot;>singning...&lt;/string>"
+        errorLine2="                               ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="80"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="        &lt;string name=&quot;running&quot;>运行中...&lt;/string>"
+        errorLine2="                               ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values-zh-rCN\strings.xml"
+            line="123"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="        &lt;string name=&quot;running&quot;>Running...&lt;/string>"
+        errorLine2="                               ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="128"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="        &lt;string name=&quot;making_rom&quot;>ROM making,will take some time...&lt;/string>"
+        errorLine2="                                  ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="130"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="IconLauncherShape"
+        severity="Warning"
+        message="Launcher icons should not fill every pixel of their square region; see the design guide for details"
+        category="Usability:Icons"
+        priority="6"
+        summary="The launcher icon shape should use a distinct silhouette"
+        explanation="According to the Android Design Guide (http://developer.android.com/design/style/iconography.html) your launcher icons should &quot;use a distinct silhouette&quot;, a &quot;three-dimensional, front view, with a slight perspective as if viewed from above, so that users perceive some depth.&quot;
+
+The unique silhouette implies that your launcher icon should not be a filled square."
+        url="http://developer.android.com/design/style/iconography.html"
+        urls="http://developer.android.com/design/style/iconography.html">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\ic_launcher.png"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        severity="Warning"
+        message="The image `ic_launcher.png` varies significantly in its density-independent (dip) size across the various density versions: drawable-hdpi\ic_launcher.png: 91x91 dp (136x136 px), drawable-xhdpi\ic_launcher.png: 48x48 dp (96x96 px), drawable-ldpi\ic_launcher.png: 48x48 dp (36x36 px)"
+        category="Usability:Icons"
+        priority="5"
+        summary="Icon density-independent size validation"
+        explanation="Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (`dip`) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-ldpi\ic_launcher.png"/>
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-xhdpi\ic_launcher.png"/>
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\ic_launcher.png"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        severity="Warning"
+        message="Missing the following drawables in `drawable-xhdpi`: file.png, folder.png, ic_action_search.png, odex.png"
+        category="Usability:Icons"
+        priority="4"
+        summary="Icon densities validation"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.
+
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-xhdpi"/>
+    </issue>
+
+    <issue
+        id="IconMissingDensityFolder"
+        severity="Warning"
+        message="Missing density variation folders in `src\main\res`: drawable-mdpi, drawable-xxhdpi, drawable-xxxhdpi"
+        category="Usability:Icons"
+        priority="3"
+        summary="Missing density folder"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra-high, extra-extra-high). This lint check identifies folders which are missing, such as `drawable-hdpi`.
+
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res"/>
+    </issue>
+
+    <issue
+        id="GoogleAppIndexingWarning"
+        severity="Warning"
+        message="App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent-filler. See issue explanation for more details."
+        category="Usability"
+        priority="5"
+        summary="Missing support for Google App Indexing"
+        explanation="Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search."
+        url="https://g.co/AppIndexing/AndroidStudio"
+        urls="https://g.co/AppIndexing/AndroidStudio"
+        errorLine1="    &lt;application"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\AndroidManifest.xml"
+            line="15"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ButtonCase"
+        severity="Warning"
+        message="The standard Android way to capitalize cancel is &quot;Cancel&quot; (tip: use `@android:string/cancel` instead)"
+        category="Usability"
+        priority="2"
+        summary="Cancel/OK dialog button capitalization"
+        explanation="The standard capitalization for OK/Cancel dialogs is &quot;OK&quot; and &quot;Cancel&quot;. To ensure that your dialogs use the standard strings, you can use the resource strings @android:string/ok and @android:string/cancel."
+        errorLine1="        &lt;string name=&quot;cancel&quot;>cancel&lt;/string>&lt;string name=&quot;compressing&quot;>compressing...&lt;/string>&lt;string name=&quot;copy&quot;>copy to clipboard&lt;/string>&lt;string name=&quot;cost_time&quot;>cost time:&lt;/string>&lt;string name=&quot;declaration&quot;>declaration&lt;/string>&lt;string name=&quot;decompile_all_finish&quot;>decompile finish&lt;/string>&lt;string name=&quot;decompile_dex_finish&quot;>decompile dex finish&lt;/string>&lt;string name=&quot;decompile_odex_finish&quot;>decompile odex finish&lt;/string>&lt;string name=&quot;decompile_res_finish&quot;>decompile reources finish&lt;/string>&lt;string name=&quot;decompiling&quot;>decompiling...&lt;/string>&lt;string name=&quot;delete_finish&quot;>delete finish&lt;/string>&lt;string name=&quot;deleting&quot;>deleting...&lt;/string>&lt;string name=&quot;dir_exist&quot;>META-INF dir exists in current path, please delete it first&lt;/string>&lt;string name=&quot;dir_not_exist&quot;>META-INF dir not exists in current path&lt;/string>&lt;string name=&quot;extracting&quot;>extracting...&lt;/string>&lt;string name=&quot;hour&quot;>hour(s)&lt;/string>"
+        errorLine2="                              ^">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            line="62"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="[Accessibility] Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.
+
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.
+
+Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="studio,adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml"
+            line="9"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;About&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;settings&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;About&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;refresh&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;Tasks&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;Make ROM&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;Donate&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;exit&quot;>&lt;/item>"
+        errorLine2="                                                                                                      ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            line="3"
+            column="103"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Donate&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;settings&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;About&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;refresh&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;Tasks&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;Make ROM&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;Donate&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;exit&quot;>&lt;/item>"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            line="3"
+            column="344"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Make ROM&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;settings&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;About&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;refresh&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;Tasks&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;Make ROM&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;Donate&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;exit&quot;>&lt;/item>"
+        errorLine2="                                                                                                                                                                                                                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            line="3"
+            column="281"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Tasks&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;settings&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;About&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;refresh&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;Tasks&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;Make ROM&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;Donate&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;exit&quot;>&lt;/item>"
+        errorLine2="                                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            line="3"
+            column="224"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;exit&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;settings&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;About&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;refresh&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;Tasks&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;Make ROM&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;Donate&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;exit&quot;>&lt;/item>"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            line="3"
+            column="403"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;refresh&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;settings&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;About&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;refresh&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;Tasks&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;Make ROM&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;Donate&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;exit&quot;>&lt;/item>"
+        errorLine2="                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            line="3"
+            column="164"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;settings&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;settings&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;About&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;refresh&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;Tasks&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;Make ROM&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;Donate&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;exit&quot;>&lt;/item>"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            line="3"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;任务&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;设置&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;关于&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;刷新&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;任务&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;制作刷机包&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;捐赠&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;退出&quot;>&lt;/item>"
+        errorLine2="                                                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            line="3"
+            column="210"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;关于&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;设置&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;关于&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;刷新&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;任务&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;制作刷机包&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;捐赠&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;退出&quot;>&lt;/item>"
+        errorLine2="                                                                                                ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            line="3"
+            column="97"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;制作刷机包&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;设置&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;关于&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;刷新&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;任务&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;制作刷机包&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;捐赠&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;退出&quot;>&lt;/item>"
+        errorLine2="                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            line="3"
+            column="264"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;刷新&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;设置&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;关于&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;刷新&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;任务&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;制作刷机包&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;捐赠&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;退出&quot;>&lt;/item>"
+        errorLine2="                                                                                                                                                          ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            line="3"
+            column="155"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;捐赠&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;设置&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;关于&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;刷新&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;任务&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;制作刷机包&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;捐赠&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;退出&quot;>&lt;/item>"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            line="3"
+            column="324"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;设置&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;设置&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;关于&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;刷新&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;任务&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;制作刷机包&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;捐赠&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;退出&quot;>&lt;/item>"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            line="3"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;退出&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        &lt;item android:id=&quot;@+id/setting&quot; android:title=&quot;设置&quot;>&lt;/item>&lt;item android:id=&quot;@+id/about&quot; android:title=&quot;关于&quot;>&lt;/item>&lt;item android:id=&quot;@+id/refresh&quot; android:title=&quot;刷新&quot;>&lt;/item>&lt;item android:id=&quot;@+id/task&quot; android:title=&quot;任务&quot;>&lt;/item>&lt;item android:id=&quot;@+id/rom&quot; android:title=&quot;制作刷机包&quot;>&lt;/item>&lt;item android:id=&quot;@+id/donate&quot; android:title=&quot;捐赠&quot;>&lt;/item>&lt;item android:id=&quot;@+id/exit&quot; android:title=&quot;退出&quot;>&lt;/item>"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                                                          ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            line="3"
+            column="379"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        severity="Warning"
+        message="When you define `paddingLeft` you should probably also define `paddingRight` for right-to-left symmetry"
+        category="Internationalization:Bidirectional Text"
+        priority="6"
+        summary="Padding and margin symmetry"
+        explanation="If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry."
+        errorLine1="        android:paddingLeft=&quot;10dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml"
+            line="16"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:paddingStart=&quot;10dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.
+
+For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.
+
+(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="        android:paddingLeft=&quot;10dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml"
+            line="16"
+            column="9"/>
+    </issue>
+
+</issues>
