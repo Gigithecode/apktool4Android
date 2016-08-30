@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+        "outputFile": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/release/values/values.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,15 @@
                     "endOffset": 167
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 123,
+                        "startColumn": 8,
+                        "startOffset": 6169,
+                        "endLine": 126,
+                        "endColumn": 23,
+                        "endOffset": 6283
+                    }
                 }
             },
             {
@@ -25,7 +33,14 @@
                     "endOffset": 346
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 23,
+                        "startOffset": 2066,
+                        "endLine": 56,
+                        "endOffset": 2240
+                    }
                 }
             },
             {
@@ -38,7 +53,15 @@
                     "endOffset": 519
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 1,
+                        "startOffset": 125,
+                        "endLine": 7,
+                        "endColumn": 23,
+                        "endOffset": 293
+                    }
                 }
             },
             {
@@ -51,7 +74,7 @@
                     "endOffset": 1453
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 23,
@@ -71,7 +94,14 @@
                     "endOffset": 1693
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 23,
+                        "startOffset": 1230,
+                        "endLine": 37,
+                        "endOffset": 1465
+                    }
                 }
             },
             {
@@ -84,7 +114,14 @@
                     "endOffset": 1823
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 23,
+                        "startOffset": 1465,
+                        "endLine": 40,
+                        "endOffset": 1590
+                    }
                 }
             },
             {
@@ -97,7 +134,15 @@
                     "endOffset": 1943
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 119,
+                        "startColumn": 8,
+                        "startOffset": 6043,
+                        "endLine": 122,
+                        "endColumn": 23,
+                        "endOffset": 6160
+                    }
                 }
             },
             {
@@ -110,7 +155,14 @@
                     "endOffset": 2211
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 23,
+                        "startOffset": 1590,
+                        "endLine": 46,
+                        "endOffset": 1854
+                    }
                 }
             },
             {
@@ -123,7 +175,14 @@
                     "endOffset": 2428
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 23,
+                        "startOffset": 1854,
+                        "endLine": 51,
+                        "endOffset": 2066
+                    }
                 }
             },
             {
@@ -136,7 +195,14 @@
                     "endOffset": 2631
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 23,
+                        "startOffset": 2240,
+                        "endLine": 60,
+                        "endOffset": 2438
+                    }
                 }
             },
             {
@@ -148,7 +214,14 @@
                     "endOffset": 2675
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 8,
+                        "startOffset": 24,
+                        "endColumn": 47,
+                        "endOffset": 63
+                    }
                 }
             },
             {
@@ -160,7 +233,14 @@
                     "endOffset": 2715
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 23,
+                        "startOffset": 2438,
+                        "endColumn": 58,
+                        "endOffset": 2473
+                    }
                 }
             },
             {
@@ -172,7 +252,14 @@
                     "endOffset": 2765
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 58,
+                        "startOffset": 2473,
+                        "endColumn": 103,
+                        "endOffset": 2518
+                    }
                 }
             },
             {
@@ -184,7 +271,14 @@
                     "endOffset": 2810
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 103,
+                        "startOffset": 2518,
+                        "endColumn": 143,
+                        "endOffset": 2558
+                    }
                 }
             },
             {
@@ -196,7 +290,14 @@
                     "endOffset": 2933
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 114,
+                        "startColumn": 8,
+                        "startOffset": 5469,
+                        "endColumn": 126,
+                        "endOffset": 5587
+                    }
                 }
             },
             {
@@ -208,7 +309,14 @@
                     "endOffset": 2987
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 143,
+                        "startOffset": 2558,
+                        "endColumn": 192,
+                        "endOffset": 2607
+                    }
                 }
             },
             {
@@ -220,7 +328,14 @@
                     "endOffset": 3036
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 192,
+                        "startOffset": 2607,
+                        "endColumn": 236,
+                        "endOffset": 2651
+                    }
                 }
             },
             {
@@ -232,7 +347,14 @@
                     "endOffset": 3108
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 236,
+                        "startOffset": 2651,
+                        "endColumn": 303,
+                        "endOffset": 2718
+                    }
                 }
             },
             {
@@ -244,7 +366,14 @@
                     "endOffset": 3153
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 303,
+                        "startOffset": 2718,
+                        "endColumn": 343,
+                        "endOffset": 2758
+                    }
                 }
             },
             {
@@ -256,7 +385,14 @@
                     "endOffset": 3195
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 8,
+                        "startOffset": 2767,
+                        "endColumn": 45,
+                        "endOffset": 2804
+                    }
                 }
             },
             {
@@ -268,7 +404,14 @@
                     "endOffset": 3250
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 45,
+                        "startOffset": 2804,
+                        "endColumn": 95,
+                        "endOffset": 2854
+                    }
                 }
             },
             {
@@ -280,7 +423,14 @@
                     "endOffset": 3301
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 95,
+                        "startOffset": 2854,
+                        "endColumn": 141,
+                        "endOffset": 2900
+                    }
                 }
             },
             {
@@ -292,7 +442,14 @@
                     "endOffset": 3350
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 141,
+                        "startOffset": 2900,
+                        "endColumn": 185,
+                        "endOffset": 2944
+                    }
                 }
             },
             {
@@ -304,7 +461,14 @@
                     "endOffset": 3421
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 112,
+                        "startColumn": 8,
+                        "startOffset": 5385,
+                        "endColumn": 74,
+                        "endOffset": 5451
+                    }
                 }
             },
             {
@@ -316,7 +480,14 @@
                     "endOffset": 3647
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 117,
+                        "startColumn": 8,
+                        "startOffset": 5736,
+                        "endColumn": 249,
+                        "endOffset": 5977
+                    }
                 }
             },
             {
@@ -328,7 +499,14 @@
                     "endOffset": 3699
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 185,
+                        "startOffset": 2944,
+                        "endColumn": 232,
+                        "endOffset": 2991
+                    }
                 }
             },
             {
@@ -340,7 +518,14 @@
                     "endOffset": 3765
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 232,
+                        "startOffset": 2991,
+                        "endColumn": 293,
+                        "endOffset": 3052
+                    }
                 }
             },
             {
@@ -352,7 +537,14 @@
                     "endOffset": 3835
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 293,
+                        "startOffset": 3052,
+                        "endColumn": 358,
+                        "endOffset": 3117
+                    }
                 }
             },
             {
@@ -364,7 +556,14 @@
                     "endOffset": 3927
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 8,
+                        "startOffset": 3662,
+                        "endColumn": 95,
+                        "endOffset": 3749
+                    }
                 }
             },
             {
@@ -376,7 +575,14 @@
                     "endOffset": 3999
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 358,
+                        "startOffset": 3117,
+                        "endColumn": 425,
+                        "endOffset": 3184
+                    }
                 }
             },
             {
@@ -388,7 +594,14 @@
                     "endOffset": 4074
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 425,
+                        "startOffset": 3184,
+                        "endColumn": 495,
+                        "endOffset": 3254
+                    }
                 }
             },
             {
@@ -400,7 +613,14 @@
                     "endOffset": 4129
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 495,
+                        "startOffset": 3254,
+                        "endColumn": 545,
+                        "endOffset": 3304
+                    }
                 }
             },
             {
@@ -412,7 +632,14 @@
                     "endOffset": 4185
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 545,
+                        "startOffset": 3304,
+                        "endColumn": 596,
+                        "endOffset": 3355
+                    }
                 }
             },
             {
@@ -424,7 +651,14 @@
                     "endOffset": 4234
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 596,
+                        "startOffset": 3355,
+                        "endColumn": 640,
+                        "endOffset": 3399
+                    }
                 }
             },
             {
@@ -436,7 +670,14 @@
                     "endOffset": 4332
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 640,
+                        "startOffset": 3399,
+                        "endColumn": 733,
+                        "endOffset": 3492
+                    }
                 }
             },
             {
@@ -448,7 +689,14 @@
                     "endOffset": 4414
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 733,
+                        "startOffset": 3492,
+                        "endColumn": 810,
+                        "endOffset": 3569
+                    }
                 }
             },
             {
@@ -460,7 +708,14 @@
                     "endOffset": 4502
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 115,
+                        "startColumn": 8,
+                        "startOffset": 5596,
+                        "endColumn": 91,
+                        "endOffset": 5679
+                    }
                 }
             },
             {
@@ -472,7 +727,14 @@
                     "endOffset": 4555
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 810,
+                        "startOffset": 3569,
+                        "endColumn": 858,
+                        "endOffset": 3617
+                    }
                 }
             },
             {
@@ -484,7 +746,14 @@
                     "endOffset": 4596
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 858,
+                        "startOffset": 3617,
+                        "endColumn": 894,
+                        "endOffset": 3653
+                    }
                 }
             },
             {
@@ -496,7 +765,14 @@
                     "endOffset": 4652
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 8,
+                        "startOffset": 3839,
+                        "endColumn": 59,
+                        "endOffset": 3890
+                    }
                 }
             },
             {
@@ -508,7 +784,14 @@
                     "endOffset": 4723
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 59,
+                        "startOffset": 3890,
+                        "endColumn": 125,
+                        "endOffset": 3956
+                    }
                 }
             },
             {
@@ -520,7 +803,14 @@
                     "endOffset": 4795
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 125,
+                        "startOffset": 3956,
+                        "endColumn": 192,
+                        "endOffset": 4023
+                    }
                 }
             },
             {
@@ -532,7 +822,14 @@
                     "endOffset": 4853
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 192,
+                        "startOffset": 4023,
+                        "endColumn": 245,
+                        "endOffset": 4076
+                    }
                 }
             },
             {
@@ -544,7 +841,14 @@
                     "endOffset": 5252
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 128,
+                        "startColumn": 8,
+                        "startOffset": 6343,
+                        "endColumn": 402,
+                        "endOffset": 6737
+                    }
                 }
             },
             {
@@ -556,7 +860,14 @@
                     "endOffset": 5297
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 245,
+                        "startOffset": 4076,
+                        "endColumn": 285,
+                        "endOffset": 4116
+                    }
                 }
             },
             {
@@ -568,7 +879,14 @@
                     "endOffset": 5370
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 129,
+                        "startColumn": 8,
+                        "startOffset": 6746,
+                        "endColumn": 76,
+                        "endOffset": 6814
+                    }
                 }
             },
             {
@@ -580,7 +898,14 @@
                     "endOffset": 5415
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 285,
+                        "startOffset": 4116,
+                        "endColumn": 325,
+                        "endOffset": 4156
+                    }
                 }
             },
             {
@@ -592,7 +917,14 @@
                     "endOffset": 5469
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 325,
+                        "startOffset": 4156,
+                        "endColumn": 374,
+                        "endOffset": 4205
+                    }
                 }
             },
             {
@@ -604,7 +936,14 @@
                     "endOffset": 5516
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 374,
+                        "startOffset": 4205,
+                        "endColumn": 416,
+                        "endOffset": 4247
+                    }
                 }
             },
             {
@@ -616,7 +955,14 @@
                     "endOffset": 5550
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 109,
+                        "startColumn": 8,
+                        "startOffset": 5276,
+                        "endColumn": 37,
+                        "endOffset": 5305
+                    }
                 }
             },
             {
@@ -628,7 +974,14 @@
                     "endOffset": 5608
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 111,
+                        "startColumn": 8,
+                        "startOffset": 5323,
+                        "endColumn": 61,
+                        "endOffset": 5376
+                    }
                 }
             },
             {
@@ -640,7 +993,14 @@
                     "endOffset": 5666
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 416,
+                        "startOffset": 4247,
+                        "endColumn": 469,
+                        "endOffset": 4300
+                    }
                 }
             },
             {
@@ -652,7 +1012,14 @@
                     "endOffset": 5700
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 469,
+                        "startOffset": 4300,
+                        "endColumn": 498,
+                        "endOffset": 4329
+                    }
                 }
             },
             {
@@ -664,7 +1031,14 @@
                     "endOffset": 5751
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 498,
+                        "startOffset": 4329,
+                        "endColumn": 544,
+                        "endOffset": 4375
+                    }
                 }
             },
             {
@@ -676,7 +1050,14 @@
                     "endOffset": 5814
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 8,
+                        "startOffset": 4384,
+                        "endColumn": 66,
+                        "endOffset": 4442
+                    }
                 }
             },
             {
@@ -688,7 +1069,14 @@
                     "endOffset": 5876
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 66,
+                        "startOffset": 4442,
+                        "endColumn": 123,
+                        "endOffset": 4499
+                    }
                 }
             },
             {
@@ -700,7 +1088,14 @@
                     "endOffset": 5931
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 123,
+                        "startOffset": 4499,
+                        "endColumn": 173,
+                        "endOffset": 4549
+                    }
                 }
             },
             {
@@ -712,7 +1107,14 @@
                     "endOffset": 5978
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 127,
+                        "startColumn": 8,
+                        "startOffset": 6292,
+                        "endColumn": 50,
+                        "endOffset": 6334
+                    }
                 }
             },
             {
@@ -724,7 +1126,14 @@
                     "endOffset": 6023
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 173,
+                        "startOffset": 4549,
+                        "endColumn": 213,
+                        "endOffset": 4589
+                    }
                 }
             },
             {
@@ -736,7 +1145,14 @@
                     "endOffset": 6068
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 8,
+                        "startOffset": 4625,
+                        "endColumn": 48,
+                        "endOffset": 4665
+                    }
                 }
             },
             {
@@ -748,7 +1164,14 @@
                     "endOffset": 6120
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 48,
+                        "startOffset": 4665,
+                        "endColumn": 95,
+                        "endOffset": 4712
+                    }
                 }
             },
             {
@@ -760,7 +1183,14 @@
                     "endOffset": 6168
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 8,
+                        "startOffset": 4730,
+                        "endColumn": 51,
+                        "endOffset": 4773
+                    }
                 }
             },
             {
@@ -772,7 +1202,14 @@
                     "endOffset": 6230
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 8,
+                        "startOffset": 4980,
+                        "endColumn": 65,
+                        "endOffset": 5037
+                    }
                 }
             },
             {
@@ -784,7 +1221,14 @@
                     "endOffset": 6281
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 65,
+                        "startOffset": 5037,
+                        "endColumn": 111,
+                        "endOffset": 5083
+                    }
                 }
             },
             {
@@ -796,7 +1240,14 @@
                     "endOffset": 6328
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 107,
+                        "startColumn": 8,
+                        "startOffset": 5128,
+                        "endColumn": 50,
+                        "endOffset": 5170
+                    }
                 }
             },
             {
@@ -808,7 +1259,14 @@
                     "endOffset": 6372
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 116,
+                        "startColumn": 8,
+                        "startOffset": 5688,
+                        "endColumn": 47,
+                        "endOffset": 5727
+                    }
                 }
             },
             {
@@ -820,7 +1278,14 @@
                     "endOffset": 6434
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 108,
+                        "startColumn": 8,
+                        "startOffset": 5179,
+                        "endColumn": 65,
+                        "endOffset": 5236
+                    }
                 }
             },
             {
@@ -832,7 +1297,14 @@
                     "endOffset": 6487
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 118,
+                        "startColumn": 8,
+                        "startOffset": 5986,
+                        "endColumn": 56,
+                        "endOffset": 6034
+                    }
                 }
             },
             {
@@ -844,7 +1316,14 @@
                     "endOffset": 6523
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 108,
+                        "startColumn": 65,
+                        "startOffset": 5236,
+                        "endColumn": 96,
+                        "endOffset": 5267
+                    }
                 }
             },
             {
@@ -856,7 +1335,14 @@
                     "endOffset": 6581
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 47,
+                        "startOffset": 63,
+                        "endColumn": 107,
+                        "endOffset": 123
+                    }
                 }
             }
         ]

@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\build\\intermediates\\res\\merged\\release\\layout\\main.xml",
-        "source": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\layout\\main.xml"
+        "merged": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/release/layout/about.xml",
+        "source": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/layout/about.xml"
     },
     {
-        "merged": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_item.xml",
-        "source": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\layout\\list_item.xml"
+        "merged": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/release/layout/list_item.xml",
+        "source": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/layout/list_item.xml"
     },
     {
-        "merged": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\build\\intermediates\\res\\merged\\release\\layout\\about.xml",
-        "source": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\layout\\about.xml"
+        "merged": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/release/layout/main.xml",
+        "source": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/layout/main.xml"
     }
 ]

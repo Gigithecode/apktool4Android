@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\build\\intermediates\\res\\merged\\release\\values-v11\\values-v11.xml",
+        "outputFile": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/release/values-v11/values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 187
                 },
                 "from": {
-                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values-v11/styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,

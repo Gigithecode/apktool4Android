@@ -4,7 +4,7 @@
     <issue
         id="InconsistentArrays"
         severity="Warning"
-        message="Array `dec_array` has an inconsistent number of items (21 in `values\strings.xml`, 15 in `values-zh-rCN\strings.xml`)"
+        message="Array `dec_array` has an inconsistent number of items (21 in `values/strings.xml`, 15 in `values-zh-rCN/strings.xml`)"
         category="Correctness"
         priority="7"
         summary="Inconsistencies in array element counts"
@@ -16,11 +16,11 @@ You can suppress this error type if it finds false errors in your project."
         errorLine1="        &lt;/string-array>&lt;string-array name=&quot;dec_array&quot;>"
         errorLine2="                       ^">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="8"
             column="24"/>
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values-zh-rCN\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values-zh-rCN/strings.xml"
             line="11"
             column="24"/>
     </issue>
@@ -41,7 +41,7 @@ To fix this issue, set the `targetSdkVersion` to the highest available value. Th
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\AndroidManifest.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/AndroidManifest.xml"
             line="10"
             column="9"/>
     </issue>
@@ -62,7 +62,7 @@ To fix this issue, set the `targetSdkVersion` to the highest available value. Th
         errorLine2="        ~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\build.gradle"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/build.gradle"
             line="10"
             column="9"/>
     </issue>
@@ -82,7 +82,7 @@ If your activity is simply a parent class intended to be subclassed by other &qu
         errorLine1="public class About extends Activity"
         errorLine2="             ~~~~~">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\java\per\pqy\apktool\About.java"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/java/per/pqy/apktool/About.java"
             line="4"
             column="14"/>
     </issue>
@@ -102,7 +102,7 @@ If your activity is simply a parent class intended to be subclassed by other &qu
         errorLine1="public class RunExec extends Activity {"
         errorLine2="             ~~~~~~~">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\java\per\pqy\apktool\RunExec.java"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/java/per/pqy/apktool/RunExec.java"
             line="13"
             column="14"/>
     </issue>
@@ -118,7 +118,7 @@ If your activity is simply a parent class intended to be subclassed by other &qu
         errorLine1="        android:minSdkVersion=&quot;8&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\AndroidManifest.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/AndroidManifest.xml"
             line="9"
             column="9"/>
     </issue>
@@ -134,7 +134,7 @@ If your activity is simply a parent class intended to be subclassed by other &qu
         errorLine1="        android:targetSdkVersion=&quot;21&quot;/>"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\AndroidManifest.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/AndroidManifest.xml"
             line="10"
             column="9"/>
     </issue>
@@ -155,7 +155,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/layout/list_item.xml"
             line="30"
             column="13"/>
     </issue>
@@ -176,7 +176,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/layout/list_item.xml"
             line="38"
             column="14"/>
     </issue>
@@ -197,7 +197,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\main.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/layout/main.xml"
             line="13"
             column="9"/>
     </issue>
@@ -214,7 +214,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="                                                                                                                                                                                                                                                                                                                                                                ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="129"
             column="353"/>
     </issue>
@@ -228,7 +228,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds.">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\ic_action_search.png"/>
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-hdpi/ic_action_search.png"/>
     </issue>
 
     <issue
@@ -242,11 +242,11 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine1="        &lt;color name=&quot;textcolor&quot;>#f905f5&lt;/color>&lt;style name=&quot;AppTheme&quot; parent=&quot;@style/AppBaseTheme&quot;>&lt;/style>"
         errorLine2="               ~~~~~~~~~~~~~~~~">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="2"
             column="16"/>
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values-zh-rCN\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values-zh-rCN/strings.xml"
             line="4"
             column="16"/>
     </issue>
@@ -265,7 +265,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="               ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="24"
             column="16"/>
     </issue>
@@ -284,7 +284,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="                                                                                                                             ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="61"
             column="126"/>
     </issue>
@@ -303,7 +303,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="                                                                        ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="62"
             column="73"/>
     </issue>
@@ -322,7 +322,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="                                                                                              ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="73"
             column="95"/>
     </issue>
@@ -341,7 +341,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="                                                                                                                                                      ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="74"
             column="151"/>
     </issue>
@@ -360,7 +360,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="                               ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="80"
             column="32"/>
     </issue>
@@ -379,7 +379,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="                               ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values-zh-rCN\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values-zh-rCN/strings.xml"
             line="123"
             column="32"/>
     </issue>
@@ -398,7 +398,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="                               ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="128"
             column="32"/>
     </issue>
@@ -417,7 +417,7 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         errorLine2="                                  ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="130"
             column="35"/>
     </issue>
@@ -435,23 +435,23 @@ The unique silhouette implies that your launcher icon should not be a filled squ
         url="http://developer.android.com/design/style/iconography.html"
         urls="http://developer.android.com/design/style/iconography.html">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\ic_launcher.png"/>
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-hdpi/ic_launcher.png"/>
     </issue>
 
     <issue
         id="IconDipSize"
         severity="Warning"
-        message="The image `ic_launcher.png` varies significantly in its density-independent (dip) size across the various density versions: drawable-hdpi\ic_launcher.png: 91x91 dp (136x136 px), drawable-xhdpi\ic_launcher.png: 48x48 dp (96x96 px), drawable-ldpi\ic_launcher.png: 48x48 dp (36x36 px)"
+        message="The image `ic_launcher.png` varies significantly in its density-independent (dip) size across the various density versions: drawable-hdpi/ic_launcher.png: 91x91 dp (136x136 px), drawable-xhdpi/ic_launcher.png: 48x48 dp (96x96 px), drawable-ldpi/ic_launcher.png: 48x48 dp (36x36 px)"
         category="Usability:Icons"
         priority="5"
         summary="Icon density-independent size validation"
         explanation="Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (`dip`) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-ldpi\ic_launcher.png"/>
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-ldpi/ic_launcher.png"/>
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-xhdpi\ic_launcher.png"/>
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-xhdpi/ic_launcher.png"/>
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-hdpi\ic_launcher.png"/>
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-hdpi/ic_launcher.png"/>
     </issue>
 
     <issue
@@ -467,13 +467,13 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
         url="http://developer.android.com/guide/practices/screens_support.html"
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\drawable-xhdpi"/>
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-xhdpi"/>
     </issue>
 
     <issue
         id="IconMissingDensityFolder"
         severity="Warning"
-        message="Missing density variation folders in `src\main\res`: drawable-mdpi, drawable-xxhdpi, drawable-xxxhdpi"
+        message="Missing density variation folders in `src/main/res`: drawable-mdpi, drawable-xxhdpi, drawable-xxxhdpi"
         category="Usability:Icons"
         priority="3"
         summary="Missing density folder"
@@ -483,7 +483,7 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
         url="http://developer.android.com/guide/practices/screens_support.html"
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res"/>
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res"/>
     </issue>
 
     <issue
@@ -500,7 +500,7 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
         errorLine2="    ^"
         quickfix="studio">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\AndroidManifest.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/AndroidManifest.xml"
             line="15"
             column="5"/>
     </issue>
@@ -516,7 +516,7 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
         errorLine1="        &lt;string name=&quot;cancel&quot;>cancel&lt;/string>&lt;string name=&quot;compressing&quot;>compressing...&lt;/string>&lt;string name=&quot;copy&quot;>copy to clipboard&lt;/string>&lt;string name=&quot;cost_time&quot;>cost time:&lt;/string>&lt;string name=&quot;declaration&quot;>declaration&lt;/string>&lt;string name=&quot;decompile_all_finish&quot;>decompile finish&lt;/string>&lt;string name=&quot;decompile_dex_finish&quot;>decompile dex finish&lt;/string>&lt;string name=&quot;decompile_odex_finish&quot;>decompile odex finish&lt;/string>&lt;string name=&quot;decompile_res_finish&quot;>decompile reources finish&lt;/string>&lt;string name=&quot;decompiling&quot;>decompiling...&lt;/string>&lt;string name=&quot;delete_finish&quot;>delete finish&lt;/string>&lt;string name=&quot;deleting&quot;>deleting...&lt;/string>&lt;string name=&quot;dir_exist&quot;>META-INF dir exists in current path, please delete it first&lt;/string>&lt;string name=&quot;dir_not_exist&quot;>META-INF dir not exists in current path&lt;/string>&lt;string name=&quot;extracting&quot;>extracting...&lt;/string>&lt;string name=&quot;hour&quot;>hour(s)&lt;/string>"
         errorLine2="                              ^">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\values\strings.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml"
             line="62"
             column="31"/>
     </issue>
@@ -537,7 +537,7 @@ Note that for text fields, you should not set both the `hint` and the `contentDe
         errorLine2="    ^"
         quickfix="studio,adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/layout/list_item.xml"
             line="9"
             column="5"/>
     </issue>
@@ -560,7 +560,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                      ~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu/menu.xml"
             line="3"
             column="103"/>
     </issue>
@@ -583,7 +583,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu/menu.xml"
             line="3"
             column="344"/>
     </issue>
@@ -606,7 +606,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                                                                                                                                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu/menu.xml"
             line="3"
             column="281"/>
     </issue>
@@ -629,7 +629,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu/menu.xml"
             line="3"
             column="224"/>
     </issue>
@@ -652,7 +652,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                                                                                                                                                                                                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu/menu.xml"
             line="3"
             column="403"/>
     </issue>
@@ -675,7 +675,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu/menu.xml"
             line="3"
             column="164"/>
     </issue>
@@ -698,7 +698,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu/menu.xml"
             line="3"
             column="41"/>
     </issue>
@@ -721,7 +721,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu-zh-rCN/menu.xml"
             line="3"
             column="210"/>
     </issue>
@@ -744,7 +744,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                ~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu-zh-rCN/menu.xml"
             line="3"
             column="97"/>
     </issue>
@@ -767,7 +767,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu-zh-rCN/menu.xml"
             line="3"
             column="264"/>
     </issue>
@@ -790,7 +790,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                                                                          ~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu-zh-rCN/menu.xml"
             line="3"
             column="155"/>
     </issue>
@@ -813,7 +813,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu-zh-rCN/menu.xml"
             line="3"
             column="324"/>
     </issue>
@@ -836,7 +836,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                        ~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu-zh-rCN/menu.xml"
             line="3"
             column="41"/>
     </issue>
@@ -859,7 +859,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine2="                                                                                                                                                                                                                                                                                                                                                                                          ~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\menu-zh-rCN\menu.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/menu-zh-rCN/menu.xml"
             line="3"
             column="379"/>
     </issue>
@@ -875,7 +875,7 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         errorLine1="        android:paddingLeft=&quot;10dp&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/layout/list_item.xml"
             line="16"
             column="9"/>
     </issue>
@@ -895,7 +895,7 @@ For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStar
         errorLine1="        android:paddingLeft=&quot;10dp&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="C:\Users\Gigi\AndroidStudioProjects\Apktool\app\src\main\res\layout\list_item.xml"
+            file="/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/layout/list_item.xml"
             line="16"
             column="9"/>
     </issue>

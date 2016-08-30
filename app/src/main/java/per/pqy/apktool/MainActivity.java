@@ -254,7 +254,7 @@ public class MainActivity extends Activity {
 					proerr = process.getErrorStream();
 					proin = process.getInputStream();
 					os.writeBytes(new String(
-							"LD_LIBRARY_PATH=/data/data/per.pqy.apktool/lix:$LD_LIBRARY_PATH ")
+							"LD_LIBRARY_PATH=/data/data/per.pqy.apktool/lix:/data/data/com.termux/files/usr/lib:$LD_LIBRARY_PATH ")
 							+ command + "\n");
 					os.writeBytes("exit\n");
 					os.flush();
@@ -553,7 +553,7 @@ public class MainActivity extends Activity {
 									final String command19 = new String(" sh /data/data/per.pqy.apktool/mydata/krakatau.sh ")
 											+ "'"
 											+uri
-											+"' -o '"
+											+"' -skip -out '"
 											+uri.substring(0,uri.length()-3)
 											+"krakatau'";
 									threadWork(MainActivity.this,getString(R.string.decompiling),command19,11);
@@ -572,8 +572,8 @@ public class MainActivity extends Activity {
 							case 0:
 								if (uri.endsWith("_src")) {
 									final String command0 = new String(
-											" sh /data/data/per.pqy.apktool/mydata/apktool.sh b -f -a /data/data/per.pqy.apktool/lix/aapt '")
-											+ uri + "' '" + uri + ".apk'";
+											" sh /data/data/per.pqy.apktool/mydata/apktool.sh b -f -p /data/data/per.pqy.apktool/apktool/framework/ -a /data/data/per.pqy.apktool/lix/aapt -d -c '")
+											+ uri + "' -o '" + uri + ".apk'";
 									threadWork(MainActivity.this,
 											getString(R.string.recompiling),
 											command0, 2);
@@ -933,7 +933,7 @@ public class MainActivity extends Activity {
 							switch (which) {
 							case 0:
 								final String command0 = new String(
-										" /data/data/per.pqy.apktool/lix/jvm/java-7-openjdk-armhf/bin/javac '")+ uri+ "'";
+										" /data/data/com.termux/files/home/jdk1.7.0_75/bin/javac '")+ uri+ "'";
 								threadWork(MainActivity.this,
 										getString(R.string.recompiling),
 										command0, 5);
@@ -955,7 +955,7 @@ public class MainActivity extends Activity {
 								parent = tmp.getParent();
 								file = tmp.getName();
 								final String command0 = new String(
-										" /data/data/per.pqy.apktool/lix/jvm/java-7-openjdk-armhf/jre/bin/java -cp '")
+										" /data/data/com.termux/files/home/jdk1.7.0_75/bin/java -cp '")
 										+ parent + "' '"+ file.substring(0,file.length()-6)+"'";
 								threadWork(MainActivity.this,
 										getString(R.string.running),
@@ -970,7 +970,6 @@ public class MainActivity extends Activity {
 
 		return null;
 	}
-
 	public void onCreate(Bundle savedInstanceState) {
 		if (new File("/system/bin/su").exists()
 				|| new File("/system/xbin/su").exists())
@@ -1058,7 +1057,7 @@ public class MainActivity extends Activity {
 					}else if(uri.endsWith(".class")){
 						showDialog(CLASS);
 					}else {
-					
+
 						Intent intent = new Intent(Intent.ACTION_VIEW);
 						final Uri apkuri = Uri.fromFile(new File(uri));
 						intent.setDataAndType(apkuri, "*/*");
@@ -1190,7 +1189,7 @@ public class MainActivity extends Activity {
 										int paramAnonymousInt) {
 									finish();
 								}
-							})			
+							})
 					.setNegativeButton(getString(R.string.no), null)
 					.create().show();
 				}
@@ -1236,7 +1235,7 @@ public class MainActivity extends Activity {
 			.setNegativeButton(getString(R.string.cancel),null)
 			.create().show();
 			return false;
-			
+
 		case R.id.donate:
 			Intent intent = new Intent();
 			intent.setAction(Intent.ACTION_VIEW);

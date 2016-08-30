@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="bg" value="0" />
+    <int name="warp" value="1" />
+    <int name="Noti" value="1" />
+    <int name="Vib" value="1" />
+    <string name="parent">/</string>
+</map>
