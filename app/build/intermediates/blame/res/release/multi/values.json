@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/release/values/values.xml",
+        "outputFile": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 167
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 123,
                         "startColumn": 8,
@@ -33,7 +33,7 @@
                     "endOffset": 346
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 51,
                         "startColumn": 23,
@@ -53,7 +53,7 @@
                     "endOffset": 519
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 1,
@@ -74,7 +74,7 @@
                     "endOffset": 1453
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 23,
@@ -94,7 +94,7 @@
                     "endOffset": 1693
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 23,
@@ -114,7 +114,7 @@
                     "endOffset": 1823
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 23,
@@ -134,7 +134,7 @@
                     "endOffset": 1943
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 119,
                         "startColumn": 8,
@@ -155,7 +155,7 @@
                     "endOffset": 2211
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 40,
                         "startColumn": 23,
@@ -175,7 +175,7 @@
                     "endOffset": 2428
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 23,
@@ -195,7 +195,7 @@
                     "endOffset": 2631
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 23,
@@ -214,7 +214,7 @@
                     "endOffset": 2675
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 1,
                         "startColumn": 8,
@@ -233,7 +233,7 @@
                     "endOffset": 2715
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 23,
@@ -252,7 +252,7 @@
                     "endOffset": 2765
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 58,
@@ -271,7 +271,7 @@
                     "endOffset": 2810
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 103,
@@ -290,7 +290,7 @@
                     "endOffset": 2933
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 114,
                         "startColumn": 8,
@@ -309,7 +309,7 @@
                     "endOffset": 2987
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 143,
@@ -328,7 +328,7 @@
                     "endOffset": 3036
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 192,
@@ -347,7 +347,7 @@
                     "endOffset": 3108
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 236,
@@ -366,7 +366,7 @@
                     "endOffset": 3153
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 303,
@@ -385,7 +385,7 @@
                     "endOffset": 3195
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 8,
@@ -404,7 +404,7 @@
                     "endOffset": 3250
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 45,
@@ -423,7 +423,7 @@
                     "endOffset": 3301
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 95,
@@ -442,7 +442,7 @@
                     "endOffset": 3350
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 141,
@@ -461,7 +461,7 @@
                     "endOffset": 3421
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 112,
                         "startColumn": 8,
@@ -480,7 +480,7 @@
                     "endOffset": 3647
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 117,
                         "startColumn": 8,
@@ -499,7 +499,7 @@
                     "endOffset": 3699
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 185,
@@ -518,7 +518,7 @@
                     "endOffset": 3765
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 232,
@@ -537,7 +537,7 @@
                     "endOffset": 3835
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 293,
@@ -556,7 +556,7 @@
                     "endOffset": 3927
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 8,
@@ -575,7 +575,7 @@
                     "endOffset": 3999
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 358,
@@ -594,7 +594,7 @@
                     "endOffset": 4074
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 425,
@@ -613,7 +613,7 @@
                     "endOffset": 4129
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 495,
@@ -632,7 +632,7 @@
                     "endOffset": 4185
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 545,
@@ -651,7 +651,7 @@
                     "endOffset": 4234
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 596,
@@ -670,7 +670,7 @@
                     "endOffset": 4332
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 640,
@@ -689,7 +689,7 @@
                     "endOffset": 4414
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 733,
@@ -708,7 +708,7 @@
                     "endOffset": 4502
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 115,
                         "startColumn": 8,
@@ -727,7 +727,7 @@
                     "endOffset": 4555
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 810,
@@ -746,7 +746,7 @@
                     "endOffset": 4596
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 858,
@@ -765,7 +765,7 @@
                     "endOffset": 4652
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 8,
@@ -784,7 +784,7 @@
                     "endOffset": 4723
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 59,
@@ -803,7 +803,7 @@
                     "endOffset": 4795
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 125,
@@ -822,7 +822,7 @@
                     "endOffset": 4853
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 192,
@@ -841,7 +841,7 @@
                     "endOffset": 5252
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 128,
                         "startColumn": 8,
@@ -860,7 +860,7 @@
                     "endOffset": 5297
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 245,
@@ -879,7 +879,7 @@
                     "endOffset": 5370
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 129,
                         "startColumn": 8,
@@ -898,7 +898,7 @@
                     "endOffset": 5415
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 285,
@@ -917,7 +917,7 @@
                     "endOffset": 5469
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 325,
@@ -936,7 +936,7 @@
                     "endOffset": 5516
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 374,
@@ -955,7 +955,7 @@
                     "endOffset": 5550
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 109,
                         "startColumn": 8,
@@ -974,7 +974,7 @@
                     "endOffset": 5608
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 111,
                         "startColumn": 8,
@@ -993,7 +993,7 @@
                     "endOffset": 5666
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 416,
@@ -1012,7 +1012,7 @@
                     "endOffset": 5700
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 469,
@@ -1031,7 +1031,7 @@
                     "endOffset": 5751
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 498,
@@ -1050,7 +1050,7 @@
                     "endOffset": 5814
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 73,
                         "startColumn": 8,
@@ -1069,7 +1069,7 @@
                     "endOffset": 5876
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 73,
                         "startColumn": 66,
@@ -1088,7 +1088,7 @@
                     "endOffset": 5931
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 73,
                         "startColumn": 123,
@@ -1107,7 +1107,7 @@
                     "endOffset": 5978
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 127,
                         "startColumn": 8,
@@ -1126,7 +1126,7 @@
                     "endOffset": 6023
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 73,
                         "startColumn": 173,
@@ -1145,7 +1145,7 @@
                     "endOffset": 6068
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 77,
                         "startColumn": 8,
@@ -1164,7 +1164,7 @@
                     "endOffset": 6120
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 77,
                         "startColumn": 48,
@@ -1183,7 +1183,7 @@
                     "endOffset": 6168
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 79,
                         "startColumn": 8,
@@ -1202,7 +1202,7 @@
                     "endOffset": 6230
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 102,
                         "startColumn": 8,
@@ -1221,7 +1221,7 @@
                     "endOffset": 6281
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 102,
                         "startColumn": 65,
@@ -1240,7 +1240,7 @@
                     "endOffset": 6328
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 107,
                         "startColumn": 8,
@@ -1259,7 +1259,7 @@
                     "endOffset": 6372
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 116,
                         "startColumn": 8,
@@ -1278,7 +1278,7 @@
                     "endOffset": 6434
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 108,
                         "startColumn": 8,
@@ -1297,7 +1297,7 @@
                     "endOffset": 6487
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 118,
                         "startColumn": 8,
@@ -1316,7 +1316,7 @@
                     "endOffset": 6523
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 108,
                         "startColumn": 65,
@@ -1335,7 +1335,7 @@
                     "endOffset": 6581
                 },
                 "from": {
-                    "file": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/values/strings.xml",
+                    "file": "C:\\Users\\Gigi\\AndroidStudioProjects\\Apktool\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 1,
                         "startColumn": 47,

@@ -1,0 +1,1797 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lint Report</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-indigo.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+<style>
+section.section--center {
+    max-width: 860px;
+}
+.mdl-card__supporting-text + .mdl-card__actions {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+main > .mdl-layout__tab-panel {
+  padding: 8px;
+  padding-top: 48px;
+}
+
+.mdl-card__actions {
+    margin: 0;
+    padding: 4px 40px;
+    color: inherit;
+}
+.mdl-card > * {
+    height: auto;
+}
+.mdl-card__actions a {
+    color: #00BCD4;
+    margin: 0;
+}
+.error-icon {
+    color: #bb7777;
+    vertical-align: bottom;
+}
+.warning-icon {
+    vertical-align: bottom;
+}
+.mdl-layout__content section:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.mdl-card .mdl-card__supporting-text {
+  margin: 40px;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  width: calc(100% - 80px);
+}
+div.mdl-layout__drawer-button .material-icons {
+    line-height: 48px;
+}
+.mdl-card .mdl-card__supporting-text {
+    margin-top: 0px;
+}
+.chips {
+    float: right;
+    vertical-align: middle;
+}
+pre.errorlines {
+    background-color: white;
+    font-family: monospace;
+    border: 1px solid #e0e0e0;
+    line-height: 0.9rem;
+    font-size: 0.9rem;    padding: 1px 0px 1px; 1px;
+    overflow: scroll;
+}
+.prefix {
+    color: #660e7a;
+    font-weight: bold;
+}
+.attribute {
+    color: #0000ff;
+    font-weight: bold;
+}
+.value {
+    color: #008000;
+    font-weight: bold;
+}
+.tag {
+    color: #000080;
+    font-weight: bold;
+}
+.comment {
+    color: #808080;
+    font-style: italic;
+}
+.javadoc {
+    color: #808080;
+    font-style: italic;
+}
+.annotation {
+    color: #808000;
+}
+.string {
+    color: #008000;
+    font-weight: bold;
+}
+.number {
+    color: #0000ff;
+}
+.keyword {
+    color: #000080;
+    font-weight: bold;
+}
+.caretline {
+    background-color: #fffae3;
+}
+.lineno {
+    color: #999999;
+    background-color: #f0f0f0;
+}
+.error {
+    display: inline-block;
+    position:relative;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AwCFR4T/3uLMgAAADxJREFUCNdNyLERQEAABMCjL4lQwIzcjErpguAL+C9AvgKJDbeD/PRpLdm35Hm+MU+cB+tCKaJW4L4YBy+CAiLJrFs9mgAAAABJRU5ErkJggg==) bottom repeat-x;
+}
+.warning {
+    text-decoration: none;
+    background-color: #f6ebbc;
+}
+.overview {
+    padding: 10pt;
+    width: 100%;
+    overflow: auto;
+    border-collapse:collapse;
+}
+.overview tr {
+    border-bottom: solid 1px #eeeeee;
+}
+.categoryColumn a {
+     text-decoration: none;
+     color: inherit;
+}
+.countColumn {
+    text-align: right;
+    padding-right: 20px;
+    width: 50px;
+}
+.issueColumn {
+   padding-left: 16px;
+}
+.categoryColumn {
+   position: relative;
+   left: -50px;
+   padding-top: 20px;
+   padding-bottom: 5px;
+}
+</style>
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+function hideid(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Lint Report: 44 warnings</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+Check performed at Sun Jul 16 16:34:52 CEST 2017      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Issue Types</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#overview"><i class="material-icons">dashboard</i>Overview</a>
+      <a class="mdl-navigation__link" href="#InconsistentArrays"><i class="material-icons warning-icon">warning</i>Inconsistencies in array element counts (1)</a>
+      <a class="mdl-navigation__link" href="#OldTargetApi"><i class="material-icons warning-icon">warning</i>Target SDK attribute is not targeting latest version (2)</a>
+      <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (1)</a>
+      <a class="mdl-navigation__link" href="#GradleOverrides"><i class="material-icons warning-icon">warning</i>Value overridden by Gradle build script (2)</a>
+      <a class="mdl-navigation__link" href="#SpUsage"><i class="material-icons warning-icon">warning</i>Using <code>dp</code> instead of <code>sp</code> for text sizes (3)</a>
+      <a class="mdl-navigation__link" href="#Typos"><i class="material-icons warning-icon">warning</i>Spelling error (1)</a>
+      <a class="mdl-navigation__link" href="#UnusedResources"><i class="material-icons warning-icon">warning</i>Unused resources (2)</a>
+      <a class="mdl-navigation__link" href="#TypographyDashes"><i class="material-icons warning-icon">warning</i>Hyphen can be replaced with dash (1)</a>
+      <a class="mdl-navigation__link" href="#TypographyEllipsis"><i class="material-icons warning-icon">warning</i>Ellipsis string can be replaced with ellipsis character (8)</a>
+      <a class="mdl-navigation__link" href="#IconLauncherShape"><i class="material-icons warning-icon">warning</i>The launcher icon shape should use a distinct silhouette (1)</a>
+      <a class="mdl-navigation__link" href="#IconDipSize"><i class="material-icons warning-icon">warning</i>Icon density-independent size validation (1)</a>
+      <a class="mdl-navigation__link" href="#IconDensities"><i class="material-icons warning-icon">warning</i>Icon densities validation (1)</a>
+      <a class="mdl-navigation__link" href="#IconMissingDensityFolder"><i class="material-icons warning-icon">warning</i>Missing density folder (1)</a>
+      <a class="mdl-navigation__link" href="#GoogleAppIndexingWarning"><i class="material-icons warning-icon">warning</i>Missing support for Firebase App Indexing (1)</a>
+      <a class="mdl-navigation__link" href="#ButtonCase"><i class="material-icons warning-icon">warning</i>Cancel/OK dialog button capitalization (1)</a>
+      <a class="mdl-navigation__link" href="#ContentDescription"><i class="material-icons warning-icon">warning</i>Image without <code>contentDescription</code> (1)</a>
+      <a class="mdl-navigation__link" href="#HardcodedText"><i class="material-icons warning-icon">warning</i>Hardcoded text (14)</a>
+      <a class="mdl-navigation__link" href="#RtlSymmetry"><i class="material-icons warning-icon">warning</i>Padding and margin symmetry (1)</a>
+      <a class="mdl-navigation__link" href="#RtlHardcoded"><i class="material-icons warning-icon">warning</i>Using left/right instead of start/end attributes (1)</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="mdl-layout__tab-panel is-active">
+<a name="overview"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card0" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Overview</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<table class="overview">
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#InconsistentArrays">InconsistentArrays</a>: Inconsistencies in array element counts</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#OldTargetApi">OldTargetApi</a>: Target SDK attribute is not targeting latest version</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#GradleDependency">GradleDependency</a>: Obsolete Gradle Dependency</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#GradleOverrides">GradleOverrides</a>: Value overridden by Gradle build script</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#SpUsage">SpUsage</a>: Using <code>dp</code> instead of <code>sp</code> for text sizes</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Correctness:Messages">Correctness:Messages</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#Typos">Typos</a>: Spelling error</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#UnusedResources">UnusedResources</a>: Unused resources</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Usability:Typography">Usability:Typography</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#TypographyDashes">TypographyDashes</a>: Hyphen can be replaced with dash</td></tr>
+<tr>
+<td class="countColumn">8</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#TypographyEllipsis">TypographyEllipsis</a>: Ellipsis string can be replaced with ellipsis character</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#IconLauncherShape">IconLauncherShape</a>: The launcher icon shape should use a distinct silhouette</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#IconDipSize">IconDipSize</a>: Icon density-independent size validation</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#IconDensities">IconDensities</a>: Icon densities validation</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#IconMissingDensityFolder">IconMissingDensityFolder</a>: Missing density folder</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Usability">Usability</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#GoogleAppIndexingWarning">GoogleAppIndexingWarning</a>: Missing support for Firebase App Indexing</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#ButtonCase">ButtonCase</a>: Cancel/OK dialog button capitalization</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Accessibility">Accessibility</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#ContentDescription">ContentDescription</a>: Image without <code>contentDescription</code></td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Internationalization">Internationalization</a>
+</td></tr>
+<tr>
+<td class="countColumn">14</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#HardcodedText">HardcodedText</a>: Hardcoded text</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Internationalization:Bidirectional Text">Internationalization:Bidirectional Text</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#RtlSymmetry">RtlSymmetry</a>: Padding and margin symmetry</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#RtlHardcoded">RtlHardcoded</a>: Using left/right instead of start/end attributes</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (23)</a>
+</td></tr></table>
+<br/>              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card0Link" onclick="hideid('card0');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Correctness"></a>
+<a name="InconsistentArrays"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card1" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Inconsistencies in array element counts</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:8</span>: <span class="message">Array <code>dec_array</code> has an inconsistent number of items (21 in <code>values\strings.xml</code>, 15 in <code>values-zh-rCN\strings.xml</code>)</span><br /><pre class="errorlines">
+<span class="lineno">   5 </span>            <span class="tag">&lt;item></span>browse<span class="tag">&lt;/item>&lt;item></span>cancel<span class="tag">&lt;/item></span>
+<span class="lineno">   6 </span>            
+<span class="lineno">   7 </span>            
+<span class="caretline"><span class="lineno">   8 </span>        <span class="tag">&lt;/string-array></span><span class="warning"><span class="tag">&lt;string-array</span><span class="attribute"> name</span>=<span class="value">"dec_array"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">   9 </span>            <span class="tag">&lt;item></span>decompile all<span class="tag">&lt;/item></span>
+<span class="lineno">  10 </span>            <span class="tag">&lt;item></span>decompile dex<span class="tag">&lt;/item></span>
+<span class="lineno">  11 </span>            <span class="tag">&lt;item></span>decompile resources<span class="tag">&lt;/item></span></pre>
+
+<ul><span class="location"><a href="../../src/main/res/values-zh-rCN/strings.xml">../../src/main/res/values-zh-rCN/strings.xml</a>:11</span>: <span class="message">Declaration with array size (15)</span><br /><pre class="errorlines">
+<span class="lineno">   8 </span>            <span class="tag">&lt;item></span>浏览<span class="tag">&lt;/item>&lt;item></span>返回<span class="tag">&lt;/item></span>
+<span class="lineno">   9 </span>            
+<span class="lineno">  10 </span>            
+<span class="caretline"><span class="lineno">  11 </span>        <span class="tag">&lt;/string-array></span><span class="warning"><span class="tag">&lt;string-array</span><span class="attribute"> name</span>=<span class="value">"dec_array"</span>></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  12 </span>            <span class="tag">&lt;item</span><span class="attribute"> ></span>反编译全部<span class="tag">&lt;/item></span>
+<span class="lineno">  13 </span>            <span class="tag">&lt;item</span><span class="attribute"> ></span>反编译dex<span class="tag">&lt;/item></span>
+<span class="lineno">  14 </span>            <span class="tag">&lt;item</span><span class="attribute"> ></span>反编译资源<span class="tag">&lt;/item></span></pre>
+</ul></div>
+<div class="metadata"><div class="explanation" id="explanationInconsistentArrays" style="display: none;">
+When an array is translated in a different locale, it should normally have the same number of elements as the original array. When adding or removing elements to an array, it is easy to forget to update all the locales, and this lint warning finds inconsistencies like these.<br/>
+<br/>
+Note however that there may be cases where you really want to declare a different number of array items in each configuration (for example where the array represents available options, and those options differ for different layout orientations and so on), so use your own judgement to decide if this is really an error.<br/>
+<br/>
+You can suppress this error type if it finds false errors in your project.<br/><br/>To suppress this error, use the issue id "InconsistentArrays" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">InconsistentArrays</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 7/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationInconsistentArraysLink" onclick="reveal('explanationInconsistentArrays');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card1Link" onclick="hideid('card1');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="OldTargetApi"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card2" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Target SDK attribute is not targeting latest version</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:10</span>: <span class="message">Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the <code>android.os.Build.VERSION_CODES</code> javadoc for details.</span><br /><pre class="errorlines">
+<span class="lineno">  7 </span>
+<span class="lineno">  8 </span>    <span class="tag">&lt;uses-sdk</span><span class="attribute">
+</span><span class="lineno">  9 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">minSdkVersion</span>=<span class="value">"8"</span>
+<span class="caretline"><span class="lineno"> 10 </span>        <span class="warning"><span class="prefix">android:</span><span class="attribute">targetSdkVersion</span>=<span class="value">"21"</span></span>/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 11 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.VIBRATE"</span>/>
+<span class="lineno"> 12 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.WRITE_EXTERNAL_STORAGE"</span>/>
+<span class="lineno"> 13 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.WAKE_LOCK"</span>/>
+</pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:10</span>: <span class="message">Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.</span><br /><pre class="errorlines">
+<span class="lineno">  7 </span>    defaultConfig {
+<span class="lineno">  8 </span>        applicationId <span class="string">"per.pqy.apktool"</span>
+<span class="lineno">  9 </span>        minSdkVersion <span class="number">8</span>
+<span class="caretline"><span class="lineno"> 10 </span>        <span class="warning">targetSdkVersion <span class="number">21</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 11 </span>    }
+<span class="lineno"> 12 </span>
+<span class="lineno"> 13 </span>    buildTypes {
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationOldTargetApi" style="display: none;">
+When your application runs on a version of Android that is more recent than your <code>targetSdkVersion</code> specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the <code>targetSdkVersion</code> is less than 14, your app may get an option button in the UI.<br/>
+<br/>
+To fix this issue, set the <code>targetSdkVersion</code> to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: <a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html">http://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a><br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html">http://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a>
+</div><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "OldTargetApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">OldTargetApi</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 6/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationOldTargetApiLink" onclick="reveal('explanationOldTargetApi');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card2Link" onclick="hideid('card2');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="GradleDependency"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card3" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Obsolete Gradle Dependency</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:5</span>: <span class="message">Old buildToolsVersion 25.0.0; recommended version is 25.0.3 or later</span><br /><pre class="errorlines">
+<span class="lineno">  2 </span>
+<span class="lineno">  3 </span>android {
+<span class="lineno">  4 </span>    compileSdkVersion <span class="number">21</span>
+<span class="caretline"><span class="lineno">  5 </span>    <span class="warning">buildToolsVersion <span class="string">'25.0.0'</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  6 </span>
+<span class="lineno">  7 </span>    defaultConfig {
+<span class="lineno">  8 </span>        applicationId <span class="string">"per.pqy.apktool"</span>
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationGradleDependency" style="display: none;">
+This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.<br/><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "GradleDependency" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">GradleDependency</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 4/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationGradleDependencyLink" onclick="reveal('explanationGradleDependency');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card3Link" onclick="hideid('card3');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="GradleOverrides"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card4" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Value overridden by Gradle build script</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:9</span>: <span class="message">This <code>minSdkVersion</code> value (<code>8</code>) is not used; it is always overridden by the value specified in the Gradle build script (<code>8</code>)</span><br /><pre class="errorlines">
+<span class="lineno">  6 </span>    
+<span class="lineno">  7 </span>
+<span class="lineno">  8 </span>    <span class="tag">&lt;uses-sdk</span><span class="attribute">
+</span><span class="caretline"><span class="lineno">  9 </span><span class="attribute">        </span><span class="warning"><span class="prefix">android:</span><span class="attribute">minSdkVersion</span>=<span class="value">"8"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 10 </span>        <span class="prefix">android:</span><span class="attribute">targetSdkVersion</span>=<span class="value">"21"</span>/>
+<span class="lineno"> 11 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.VIBRATE"</span>/>
+<span class="lineno"> 12 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.WRITE_EXTERNAL_STORAGE"</span>/>
+</pre>
+
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:10</span>: <span class="message">This <code>targetSdkVersion</code> value (<code>21</code>) is not used; it is always overridden by the value specified in the Gradle build script (<code>21</code>)</span><br /><pre class="errorlines">
+<span class="lineno">  7 </span>
+<span class="lineno">  8 </span>    <span class="tag">&lt;uses-sdk</span><span class="attribute">
+</span><span class="lineno">  9 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">minSdkVersion</span>=<span class="value">"8"</span>
+<span class="caretline"><span class="lineno"> 10 </span>        <span class="warning"><span class="prefix">android:</span><span class="attribute">targetSdkVersion</span>=<span class="value">"21"</span></span>/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 11 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.VIBRATE"</span>/>
+<span class="lineno"> 12 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.WRITE_EXTERNAL_STORAGE"</span>/>
+<span class="lineno"> 13 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.WAKE_LOCK"</span>/>
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationGradleOverrides" style="display: none;">
+The value of (for example) <code>minSdkVersion</code> is only used if it is not specified in the <code>build.gradle</code> build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity.<br/><br/>To suppress this error, use the issue id "GradleOverrides" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">GradleOverrides</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 4/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationGradleOverridesLink" onclick="reveal('explanationGradleOverrides');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card4Link" onclick="hideid('card4');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="SpUsage"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card5" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Using dp instead of sp for text sizes</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/list_item.xml">../../src/main/res/layout/list_item.xml</a>:30</span>: <span class="message">Should use "<code>sp</code>" instead of "<code>dp</code>" for text sizes</span><br /><pre class="errorlines">
+<span class="lineno"> 27 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 28 </span>            <span class="prefix">android:</span><span class="attribute">gravity</span>=<span class="value">"center_vertical"</span>
+<span class="lineno"> 29 </span>            <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"#00ff00"</span>
+<span class="caretline"><span class="lineno"> 30 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"16dp"</span></span> />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 31 </span>        
+<span class="lineno"> 32 </span>         <span class="tag">&lt;TextView</span><span class="attribute">
+</span><span class="lineno"> 33 </span><span class="attribute">             </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/file_modify"</span>
+</pre>
+
+<span class="location"><a href="../../src/main/res/layout/list_item.xml">../../src/main/res/layout/list_item.xml</a>:38</span>: <span class="message">Should use "<code>sp</code>" instead of "<code>dp</code>" for text sizes</span><br /><pre class="errorlines">
+<span class="lineno"> 35 </span>             <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 36 </span>             <span class="prefix">android:</span><span class="attribute">gravity</span>=<span class="value">"center_vertical"</span>
+<span class="lineno"> 37 </span>             <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"#90893b"</span>
+<span class="caretline"><span class="lineno"> 38 </span>             <span class="warning"><span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"12dp"</span></span> />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 39 </span>        
+<span class="lineno"> 40 </span>    <span class="tag">&lt;/LinearLayout></span>
+<span class="lineno"> 41 </span>    
+</pre>
+
+<span class="location"><a href="../../src/main/res/layout/main.xml">../../src/main/res/layout/main.xml</a>:13</span>: <span class="message">Should use "<code>sp</code>" instead of "<code>dp</code>" for text sizes</span><br /><pre class="errorlines">
+<span class="lineno"> 10 </span>        <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 11 </span>        <span class="prefix">android:</span><span class="attribute">layout_gravity</span>=<span class="value">"center_horizontal"</span>
+<span class="lineno"> 12 </span>        <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"#ff0000"</span>
+<span class="caretline"><span class="lineno"> 13 </span>        <span class="warning"><span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"15dp"</span></span> />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 14 </span>
+<span class="lineno"> 15 </span>    <span class="tag">&lt;ListView</span><span class="attribute">
+</span><span class="lineno"> 16 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/files"</span>
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationSpUsage" style="display: none;">
+When setting text sizes, you should normally use <code>sp</code>, or "scale-independent pixels". This is like the <code>dp</code> unit, but it is also scaled by the user's font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user's preference.<br/>
+<br/>
+There <b>are</b> cases where you might need to use <code>dp</code>; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user's font size settings are not respected, so consider adjusting the layout itself to be more flexible.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/training/multiscreen/screendensities.html">http://developer.android.com/training/multiscreen/screendensities.html</a>
+</div><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "SpUsage" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">SpUsage</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 3/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationSpUsageLink" onclick="reveal('explanationSpUsage');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card5Link" onclick="hideid('card5');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Correctness:Messages"></a>
+<a name="Typos"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card6" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Spelling error</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:129</span>: <span class="message">"youself" is a common misspelling; did you mean "yourself" ?</span><br /><pre class="errorlines">
+<span class="lineno"> 126 </span>      <span class="tag">&lt;item</span><span class="attribute"> ></span>return<span class="tag">&lt;/item></span>
+<span class="lineno"> 127 </span>  <span class="tag">&lt;/string-array></span>
+<span class="lineno"> 128 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"running"</span>>Running...<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno"> 129 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"make_rom"</span>>This is a testing function,which aims at making a update.zip for recovery. Put boot.img in apktool data folder if you want to add it. When the operation has finished, a folder named rom will be created in apktool data folder.Maybe you need to edit META-INF/com/google/androd/updater-script.You need to create update.zip <span class="warning">youself</span>.Just zip all files in rom folder.<span class="tag">&lt;/string></span></span>
+<span class="lineno"> 130 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"making_rom"</span>>ROM making,will take some time...<span class="tag">&lt;/string></span>
+<span class="lineno"> 131 </span>  
+<span class="lineno"> 132 </span>  
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationTypos" style="display: none;">
+This check looks through the string definitions, and if it finds any words that look like likely misspellings, they are flagged.<br/><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "Typos" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Typos</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Messages</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 7/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationTyposLink" onclick="reveal('explanationTypos');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card6Link" onclick="hideid('card6');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Performance"></a>
+<a name="UnusedResources"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card7" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Unused resources</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/drawable-hdpi/ic_action_search.png">../../src/main/res/drawable-hdpi/ic_action_search.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable-hdpi/ic_action_search.png" /><span class="message">The resource <code>R.drawable.ic_action_search</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:2</span>: <span class="message">The resource <code>R.color.textcolor</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">   1 </span>  <span class="tag">&lt;resources></span>
+<span class="caretline"><span class="lineno">   2 </span>      <span class="tag">&lt;color</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"textcolor"</span></span>>#f905f5<span class="tag">&lt;/color>&lt;style</span><span class="attribute"> name</span>=<span class="value">"AppTheme"</span> <span class="attribute">parent</span>=<span class="value">"@style/AppBaseTheme"</span>><span class="tag">&lt;/style></span></span>
+<span class="lineno">   3 </span>    <span class="tag">&lt;string-array</span><span class="attribute"> name</span>=<span class="value">"comp_array"</span>>
+<span class="lineno">   4 </span>          <span class="tag">&lt;item></span>recompile<span class="tag">&lt;/item></span>
+<span class="lineno">   5 </span>          <span class="tag">&lt;item></span>browse<span class="tag">&lt;/item>&lt;item></span>cancel<span class="tag">&lt;/item></span></pre>
+
+<ul></ul><button id="Location2DivLink" onclick="reveal('Location2Div');" />+ 1 Additional Locations...</button>
+<div id="Location2Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/values-zh-rCN/strings.xml">../../src/main/res/values-zh-rCN/strings.xml</a>:4</span>
+</ul>
+</div><br/><br/>
+</div>
+<div class="metadata"><div class="explanation" id="explanationUnusedResources" style="display: none;">
+Unused resources make applications larger and slow down builds.<br/><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">UnusedResources</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Performance</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 3/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationUnusedResourcesLink" onclick="reveal('explanationUnusedResources');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card7Link" onclick="hideid('card7');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Usability:Typography"></a>
+<a name="TypographyDashes"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card8" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Hyphen can be replaced with dash</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:24</span>: <span class="message">Replace "--" with an "em dash" character (&#8212;, &amp;#8212;) ?</span><br /><pre class="errorlines">
+<span class="lineno">  21 </span>        <span class="tag">&lt;item</span><span class="attribute"> ></span>dex2jar<span class="tag">&lt;/item></span>
+<span class="lineno">  22 </span>        <span class="tag">&lt;item</span><span class="attribute"> ></span>jar2dex<span class="tag">&lt;/item></span>
+<span class="lineno">  23 </span>        <span class="tag">&lt;item</span><span class="attribute"> ></span>decompile jar (jd-cli)<span class="tag">&lt;/item></span>
+<span class="caretline"><span class="lineno">  24 </span>        <span class="tag">&lt;item</span><span class="attribute"> ></span><span class="warning">decompile jar (CFR --rename)</span><span class="tag">&lt;/item></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  25 </span>        <span class="tag">&lt;item</span><span class="attribute"> ></span>decompile jar (Procyon)<span class="tag">&lt;/item></span>
+<span class="lineno">  26 </span>        <span class="tag">&lt;item</span><span class="attribute"> ></span>decompile jar (Fernflower)<span class="tag">&lt;/item></span>
+<span class="lineno">  27 </span>        <span class="tag">&lt;item</span><span class="attribute"> ></span>decompile jar (jadx)<span class="tag">&lt;/item></span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationTypographyDashes" style="display: none;">
+The "n dash" (&#8211;, &amp;#8211;) and the "m dash" (&#8212;, &amp;#8212;) characters are used for ranges (n dash) and breaks (m dash). Using these instead of plain hyphens can make text easier to read and your application will look more polished.<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Dash">http://en.wikipedia.org/wiki/Dash</a>
+</div><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "TypographyDashes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">TypographyDashes</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Typography</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 5/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationTypographyDashesLink" onclick="reveal('explanationTypographyDashes');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card8Link" onclick="hideid('card8');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="TypographyEllipsis"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card9" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Ellipsis string can be replaced with ellipsis character</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:61</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno">  58 </span>      <span class="tag">&lt;item></span>extract(only for mt65xx,need root)<span class="tag">&lt;/item></span>
+<span class="lineno">  59 </span>      <span class="tag">&lt;item></span>extract(common,need root)<span class="tag">&lt;/item></span>
+<span class="lineno">  60 </span>      <span class="tag">&lt;item></span>cancel<span class="tag">&lt;/item></span>
+<span class="caretline"><span class="lineno">  61 </span>  <span class="tag">&lt;/string-array>&lt;string</span><span class="attribute"> name</span>=<span class="value">"about"</span>>About<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"add_finish"</span>>add finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"adding"</span>><span class="warning">adding...</span><span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"align_finish"</span>>align finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"aligning"</span>>aligning...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"apk_not_exist"</span>>apk with same name not found.<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"app_name"</span>>Apktool<span class="tag">&lt;/string></span></span>
+<span class="lineno">  62 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"cancel"</span>>cancel<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"compressing"</span>>compressing...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"copy"</span>>copy to clipboard<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"cost_time"</span>>cost time:<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"declaration"</span>>declaration<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_all_finish"</span>>decompile finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_dex_finish"</span>>decompile dex finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_odex_finish"</span>>decompile odex finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_res_finish"</span>>decompile reources finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompiling"</span>>decompiling...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"delete_finish"</span>>delete finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"deleting"</span>>deleting...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"dir_exist"</span>>META-INF dir exists in current path, please delete it first<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"dir_not_exist"</span>>META-INF dir not exists in current path<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"extracting"</span>>extracting...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"hour"</span>>hour(s)<span class="tag">&lt;/string></span>
+<span class="lineno">  63 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_jar_finish"</span> <span class="attribute">translatable</span>=<span class="value">"false"</span>>decompile_jar_finish><span class="tag">&lt;/string></span>
+<span class="lineno">  64 </span>  
+</pre>
+
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:62</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno">  59 </span>      <span class="tag">&lt;item></span>extract(common,need root)<span class="tag">&lt;/item></span>
+<span class="lineno">  60 </span>      <span class="tag">&lt;item></span>cancel<span class="tag">&lt;/item></span>
+<span class="lineno">  61 </span>  <span class="tag">&lt;/string-array>&lt;string</span><span class="attribute"> name</span>=<span class="value">"about"</span>>About<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"add_finish"</span>>add finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"adding"</span>>adding...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"align_finish"</span>>align finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"aligning"</span>>aligning...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"apk_not_exist"</span>>apk with same name not found.<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"app_name"</span>>Apktool<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno">  62 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"cancel"</span>>cancel<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"compressing"</span>><span class="warning">compressing...</span><span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"copy"</span>>copy to clipboard<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"cost_time"</span>>cost time:<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"declaration"</span>>declaration<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_all_finish"</span>>decompile finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_dex_finish"</span>>decompile dex finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_odex_finish"</span>>decompile odex finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_res_finish"</span>>decompile reources finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompiling"</span>>decompiling...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"delete_finish"</span>>delete finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"deleting"</span>>deleting...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"dir_exist"</span>>META-INF dir exists in current path, please delete it first<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"dir_not_exist"</span>>META-INF dir not exists in current path<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"extracting"</span>>extracting...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"hour"</span>>hour(s)<span class="tag">&lt;/string></span></span>
+<span class="lineno">  63 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_jar_finish"</span> <span class="attribute">translatable</span>=<span class="value">"false"</span>>decompile_jar_finish><span class="tag">&lt;/string></span>
+<span class="lineno">  64 </span>  
+<span class="lineno">  65 </span>  
+</pre>
+
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:73</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno">  70 </span>  
+<span class="lineno">  71 </span>  
+<span class="lineno">  72 </span>  
+<span class="caretline"><span class="lineno">  73 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"import_finish"</span>>import finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"importing_framework"</span>><span class="warning">importing framework...</span><span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"jar_not_exist"</span>>jar with same name not found.<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"keep_screen_on"</span>>keep screen on<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"making"</span>>making...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"minute"</span>>minute(s)<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"never_remind"</span>>never remind<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"new_name"</span>>new name:<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"notify"</span>>notify after operation<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"ok"</span>>OK<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"op_done"</span>>operate finish<span class="tag">&lt;/string></span></span>
+<span class="lineno">  74 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"put_background"</span>>put into background<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"recompile_finish"</span>>recompile finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"recompiling"</span>>recompiling...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"second"</span>>second(s)<span class="tag">&lt;/string></span>
+<span class="lineno">  75 </span>  
+<span class="lineno">  76 </span>  
+</pre>
+
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:74</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno">  71 </span>  
+<span class="lineno">  72 </span>  
+<span class="lineno">  73 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"import_finish"</span>>import finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"importing_framework"</span>>importing framework...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"jar_not_exist"</span>>jar with same name not found.<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"keep_screen_on"</span>>keep screen on<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"making"</span>>making...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"minute"</span>>minute(s)<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"never_remind"</span>>never remind<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"new_name"</span>>new name:<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"notify"</span>>notify after operation<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"ok"</span>>OK<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"op_done"</span>>operate finish<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno">  74 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"put_background"</span>>put into background<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"recompile_finish"</span>>recompile finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"recompiling"</span>><span class="warning">recompiling...</span><span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"second"</span>>second(s)<span class="tag">&lt;/string></span></span>
+<span class="lineno">  75 </span>  
+<span class="lineno">  76 </span>  
+<span class="lineno">  77 </span>  
+</pre>
+
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:80</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno">  77 </span>   
+<span class="lineno">  78 </span>   <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"setting"</span>>Settings<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"sign_finish"</span>>sign finish<span class="tag">&lt;/string></span>
+<span class="lineno">  79 </span>   
+<span class="caretline"><span class="lineno">  80 </span>   <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"signing"</span>><span class="warning">singning...</span><span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  81 </span>   
+<span class="lineno">  82 </span>   
+<span class="lineno">  83 </span>   
+</pre>
+
+<span class="location"><a href="../../src/main/res/values-zh-rCN/strings.xml">../../src/main/res/values-zh-rCN/strings.xml</a>:123</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno"> 120 </span>      <span class="tag">&lt;item</span><span class="attribute"> ></span>运行<span class="tag">&lt;/item></span>
+<span class="lineno"> 121 </span>      <span class="tag">&lt;item</span><span class="attribute"> ></span>返回<span class="tag">&lt;/item></span>
+<span class="lineno"> 122 </span>  <span class="tag">&lt;/string-array></span>
+<span class="caretline"><span class="lineno"> 123 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"running"</span>><span class="warning">运行中...</span><span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 124 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"make_rom"</span>>本功能为新功能，处于测试阶段。目的是自动提取本机ROM制作成刷机包，如果你想在刷机包中加入boot.img，请把它放到apktool数据目录。操作完成后将会在apktool数据目录生成rom文件夹，你可能需要手动修改一下rom/META-INF/com/google/android/updater-script文件。然后把rom目录所有文件打包为zip就是刷机包了。<span class="tag">&lt;/string></span>
+<span class="lineno"> 125 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"making_rom"</span>>制作中，可能需要一段时间。。。<span class="tag">&lt;/string></span>
+</pre>
+
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:128</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno"> 125 </span>      <span class="tag">&lt;item</span><span class="attribute"> ></span>run<span class="tag">&lt;/item></span>
+<span class="lineno"> 126 </span>      <span class="tag">&lt;item</span><span class="attribute"> ></span>return<span class="tag">&lt;/item></span>
+<span class="lineno"> 127 </span>  <span class="tag">&lt;/string-array></span>
+<span class="caretline"><span class="lineno"> 128 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"running"</span>><span class="warning">Running...</span><span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 129 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"make_rom"</span>>This is a testing function,which aims at making a update.zip for recovery. Put boot.img in apktool data folder if you want to add it. When the operation has finished, a folder named rom will be created in apktool data folder.Maybe you need to edit META-INF/com/google/androd/updater-script.You need to create update.zip youself.Just zip all files in rom folder.<span class="tag">&lt;/string></span>
+<span class="lineno"> 130 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"making_rom"</span>>ROM making,will take some time...<span class="tag">&lt;/string></span>
+<span class="lineno"> 131 </span>  
+</pre>
+
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:130</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno"> 127 </span>  <span class="tag">&lt;/string-array></span>
+<span class="lineno"> 128 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"running"</span>>Running...<span class="tag">&lt;/string></span>
+<span class="lineno"> 129 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"make_rom"</span>>This is a testing function,which aims at making a update.zip for recovery. Put boot.img in apktool data folder if you want to add it. When the operation has finished, a folder named rom will be created in apktool data folder.Maybe you need to edit META-INF/com/google/androd/updater-script.You need to create update.zip youself.Just zip all files in rom folder.<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno"> 130 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"making_rom"</span>><span class="warning">ROM making,will take some time...</span><span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 131 </span>  
+<span class="lineno"> 132 </span>  
+<span class="lineno"> 133 </span>  
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationTypographyEllipsis" style="display: none;">
+You can replace the string "..." with a dedicated ellipsis character, ellipsis character (&#8230;, &amp;#8230;). This can help make the text more readable.<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Ellipsis">http://en.wikipedia.org/wiki/Ellipsis</a>
+</div><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "TypographyEllipsis" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">TypographyEllipsis</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Typography</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 5/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationTypographyEllipsisLink" onclick="reveal('explanationTypographyEllipsis');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card9Link" onclick="hideid('card9');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Usability:Icons"></a>
+<a name="IconLauncherShape"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card10" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">The launcher icon shape should use a distinct silhouette</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/drawable-hdpi/ic_launcher.png">../../src/main/res/drawable-hdpi/ic_launcher.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable-hdpi/ic_launcher.png" /><span class="message">Launcher icons should not fill every pixel of their square region; see the design guide for details</span><br clear="right"/>
+</div>
+<div class="metadata"><div class="explanation" id="explanationIconLauncherShape" style="display: none;">
+According to the Android Design Guide (<a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>) your launcher icons should "use a distinct silhouette", a "three-dimensional, front view, with a slight perspective as if viewed from above, so that users perceive some depth."<br/>
+<br/>
+The unique silhouette implies that your launcher icon should not be a filled square.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div><br/>To suppress this error, use the issue id "IconLauncherShape" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">IconLauncherShape</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Icons</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 6/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationIconLauncherShapeLink" onclick="reveal('explanationIconLauncherShape');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card10Link" onclick="hideid('card10');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="IconDipSize"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card11" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Icon density-independent size validation</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/drawable-ldpi/ic_launcher.png">../../src/main/res/drawable-ldpi/ic_launcher.png</a></span>: <span class="message">The image <code>ic_launcher.png</code> varies significantly in its density-independent (dip) size across the various density versions: drawable-hdpi\ic_launcher.png: 91x91 dp (136x136 px), drawable-xhdpi\ic_launcher.png: 48x48 dp (96x96 px), drawable-ldpi\ic_launcher.png: 48x48 dp (36x36 px)</span><br />
+<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 2 Additional Locations...</button>
+<div id="Location1Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/drawable-xhdpi/ic_launcher.png">../../src/main/res/drawable-xhdpi/ic_launcher.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/drawable-hdpi/ic_launcher.png">../../src/main/res/drawable-hdpi/ic_launcher.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../src/main/res/drawable-xhdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/drawable-xhdpi/ic_launcher.png" /></a>
+</td><td><a href="../../src/main/res/drawable-hdpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/drawable-hdpi/ic_launcher.png" /></a>
+</td><td><a href="../../src/main/res/drawable-ldpi/ic_launcher.png"><img border="0" align="top" src="../../src/main/res/drawable-ldpi/ic_launcher.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>hdpi</th><th>ldpi</th></tr>
+</table>
+</div>
+<div class="metadata"><div class="explanation" id="explanationIconDipSize" style="display: none;">
+Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (<code>dip</code>) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.<br/><br/>To suppress this error, use the issue id "IconDipSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">IconDipSize</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Icons</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 5/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationIconDipSizeLink" onclick="reveal('explanationIconDipSize');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card11Link" onclick="hideid('card11');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="IconDensities"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card12" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Icon densities validation</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/drawable-xhdpi">../../src/main/res/drawable-xhdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-xhdpi</code>: file.png, folder.png, ic_action_search.png, odex.png</span><br />
+</div>
+<div class="metadata"><div class="explanation" id="explanationIconDensities" style="display: none;">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.<br/>
+<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a><br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconDensities" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">IconDensities</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Icons</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 4/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationIconDensitiesLink" onclick="reveal('explanationIconDensities');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card12Link" onclick="hideid('card12');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="IconMissingDensityFolder"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card13" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Missing density folder</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res">../../src/main/res</a></span>: <span class="message">Missing density variation folders in <code>src\main\res</code>: drawable-mdpi, drawable-xxhdpi</span><br />
+</div>
+<div class="metadata"><div class="explanation" id="explanationIconMissingDensityFolder" style="display: none;">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra-high, extra-extra-high). This lint check identifies folders which are missing, such as <code>drawable-hdpi</code>.<br/>
+<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a><br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconMissingDensityFolder" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">IconMissingDensityFolder</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Icons</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 3/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationIconMissingDensityFolderLink" onclick="reveal('explanationIconMissingDensityFolder');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card13Link" onclick="hideid('card13');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Usability"></a>
+<a name="GoogleAppIndexingWarning"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card14" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Missing support for Firebase App Indexing</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:15</span>: <span class="message">App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent filter. See issue explanation for more details.</span><br /><pre class="errorlines">
+<span class="lineno"> 12 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.WRITE_EXTERNAL_STORAGE"</span>/>
+<span class="lineno"> 13 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.WAKE_LOCK"</span>/>
+<span class="lineno"> 14 </span>
+<span class="caretline"><span class="lineno"> 15 </span>    <span class="warning"><span class="tag">&lt;application</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
+</span><span class="lineno"> 16 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">allowBackup</span>=<span class="value">"true"</span>
+<span class="lineno"> 17 </span>       
+<span class="lineno"> 18 </span>        <span class="prefix">android:</span><span class="attribute">icon</span>=<span class="value">"@drawable/ic_launcher"</span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationGoogleAppIndexingWarning" style="display: none;">
+Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search.<br/><div class="moreinfo">More info: <a href="https://g.co/AppIndexing/AndroidStudio">https://g.co/AppIndexing/AndroidStudio</a>
+</div><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "GoogleAppIndexingWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">GoogleAppIndexingWarning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 5/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationGoogleAppIndexingWarningLink" onclick="reveal('explanationGoogleAppIndexingWarning');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card14Link" onclick="hideid('card14');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="ButtonCase"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card15" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Cancel/OK dialog button capitalization</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:62</span>: <span class="message">The standard Android way to capitalize cancel is "Cancel" (tip: use <code>@android:string/cancel</code> instead)</span><br /><pre class="errorlines">
+<span class="lineno">  59 </span>      <span class="tag">&lt;item></span>extract(common,need root)<span class="tag">&lt;/item></span>
+<span class="lineno">  60 </span>      <span class="tag">&lt;item></span>cancel<span class="tag">&lt;/item></span>
+<span class="lineno">  61 </span>  <span class="tag">&lt;/string-array>&lt;string</span><span class="attribute"> name</span>=<span class="value">"about"</span>>About<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"add_finish"</span>>add finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"adding"</span>>adding...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"align_finish"</span>>align finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"aligning"</span>>aligning...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"apk_not_exist"</span>>apk with same name not found.<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"app_name"</span>>Apktool<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno">  62 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"cancel"</span>><span class="warning">cancel</span><span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"compressing"</span>>compressing...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"copy"</span>>copy to clipboard<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"cost_time"</span>>cost time:<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"declaration"</span>>declaration<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_all_finish"</span>>decompile finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_dex_finish"</span>>decompile dex finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_odex_finish"</span>>decompile odex finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_res_finish"</span>>decompile reources finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompiling"</span>>decompiling...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"delete_finish"</span>>delete finish<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"deleting"</span>>deleting...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"dir_exist"</span>>META-INF dir exists in current path, please delete it first<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"dir_not_exist"</span>>META-INF dir not exists in current path<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"extracting"</span>>extracting...<span class="tag">&lt;/string>&lt;string</span><span class="attribute"> name</span>=<span class="value">"hour"</span>>hour(s)<span class="tag">&lt;/string></span></span>
+<span class="lineno">  63 </span>  <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"decompile_jar_finish"</span> <span class="attribute">translatable</span>=<span class="value">"false"</span>>decompile_jar_finish><span class="tag">&lt;/string></span>
+<span class="lineno">  64 </span>  
+<span class="lineno">  65 </span>  
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationButtonCase" style="display: none;">
+The standard capitalization for OK/Cancel dialogs is "OK" and "Cancel". To ensure that your dialogs use the standard strings, you can use the resource strings @android:string/ok and @android:string/cancel.<br/><br/>To suppress this error, use the issue id "ButtonCase" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">ButtonCase</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 2/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationButtonCaseLink" onclick="reveal('explanationButtonCase');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card15Link" onclick="hideid('card15');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Accessibility"></a>
+<a name="ContentDescription"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card16" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Image without contentDescription</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/list_item.xml">../../src/main/res/layout/list_item.xml</a>:9</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  6 </span>    
+<span class="lineno">  7 </span>    <span class="prefix">android:</span><span class="attribute">padding</span>=<span class="value">"5dip"</span> >
+<span class="lineno">  8 </span>
+<span class="caretline"><span class="lineno">  9 </span>    <span class="warning"><span class="tag">&lt;ImageView</span><span class="attribute"></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
+</span><span class="lineno"> 10 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/icon"</span>
+<span class="lineno"> 11 </span>        <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 12 </span>        <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationContentDescription" style="display: none;">
+Non-textual widgets like ImageViews and ImageButtons should use the <code>contentDescription</code> attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.<br/>
+<br/>
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore="ContentDescription" attribute.<br/>
+<br/>
+Note that for text fields, you should not set both the <code>hint</code> and the <code>contentDescription</code> attributes since the hint will never be shown. Just set the <code>hint</code>. See <a href="http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases">http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases</a>.<br/><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "ContentDescription" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">ContentDescription</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Accessibility</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 3/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationContentDescriptionLink" onclick="reveal('explanationContentDescription');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card16Link" onclick="hideid('card16');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Internationalization"></a>
+<a name="HardcodedText"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card17" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Hardcoded text</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/menu/menu.xml">../../src/main/res/menu/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "About", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"settings"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"About"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"refresh"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Tasks"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Make ROM"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Donate"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"exit"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu/menu.xml">../../src/main/res/menu/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "Donate", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"settings"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"About"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"refresh"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Tasks"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Make ROM"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Donate"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"exit"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu/menu.xml">../../src/main/res/menu/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "Make ROM", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"settings"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"About"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"refresh"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Tasks"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Make ROM"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Donate"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"exit"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu/menu.xml">../../src/main/res/menu/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "Tasks", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"settings"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"About"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"refresh"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Tasks"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Make ROM"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Donate"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"exit"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu/menu.xml">../../src/main/res/menu/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "exit", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"settings"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"About"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"refresh"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Tasks"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Make ROM"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Donate"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"exit"</span></span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<button class="mdl-button mdl-js-button mdl-button--primary" id="HardcodedTextDivLink" onclick="reveal('HardcodedTextDiv');" />+ 9 More Occurrences...</button>
+<div id="HardcodedTextDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/menu/menu.xml">../../src/main/res/menu/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "refresh", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"settings"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"About"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"refresh"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Tasks"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Make ROM"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Donate"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"exit"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu/menu.xml">../../src/main/res/menu/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "settings", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"settings"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"About"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"refresh"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Tasks"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Make ROM"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"Donate"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"exit"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu-zh-rCN/menu.xml">../../src/main/res/menu-zh-rCN/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "&#20219;&#21153;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"设置"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"关于"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"刷新"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"任务"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"制作刷机包"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"捐赠"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"退出"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu-zh-rCN/menu.xml">../../src/main/res/menu-zh-rCN/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "&#20851;&#20110;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"设置"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"关于"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"刷新"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"任务"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"制作刷机包"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"捐赠"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"退出"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu-zh-rCN/menu.xml">../../src/main/res/menu-zh-rCN/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "&#21046;&#20316;&#21047;&#26426;&#21253;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"设置"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"关于"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"刷新"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"任务"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"制作刷机包"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"捐赠"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"退出"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu-zh-rCN/menu.xml">../../src/main/res/menu-zh-rCN/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "&#21047;&#26032;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"设置"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"关于"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"刷新"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"任务"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"制作刷机包"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"捐赠"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"退出"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu-zh-rCN/menu.xml">../../src/main/res/menu-zh-rCN/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "&#25424;&#36192;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"设置"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"关于"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"刷新"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"任务"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"制作刷机包"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"捐赠"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"退出"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu-zh-rCN/menu.xml">../../src/main/res/menu-zh-rCN/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "&#35774;&#32622;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"设置"</span></span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"关于"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"刷新"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"任务"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"制作刷机包"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"捐赠"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"退出"</span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu-zh-rCN/menu.xml">../../src/main/res/menu-zh-rCN/menu.xml</a>:3</span>: <span class="message">[I18N] Hardcoded string "&#36864;&#20986;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span>
+<span class="lineno">  2 </span>  <span class="tag">&lt;menu</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
+<span class="caretline"><span class="lineno">  3 </span>      <span class="tag">&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/setting"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"设置"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/about"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"关于"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/refresh"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"刷新"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/task"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"任务"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/rom"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"制作刷机包"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/donate"</span> <span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"捐赠"</span>><span class="tag">&lt;/item>&lt;item</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/exit"</span> <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"退出"</span></span>><span class="tag">&lt;/item></span></span>
+<span class="lineno">  4 </span>      
+<span class="lineno">  5 </span>      
+<span class="lineno">  6 </span>      
+</pre>
+
+</div>
+</div>
+<div class="metadata"><div class="explanation" id="explanationHardcodedText" style="display: none;">
+Hardcoding text attributes directly in layout files is bad for several reasons:<br/>
+<br/>
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)<br/>
+<br/>
+* The application cannot be translated to other languages by just adding new translations for existing string resources.<br/>
+<br/>
+There are quickfixes to automatically extract this hardcoded string into a resource lookup.<br/><br/>To suppress this error, use the issue id "HardcodedText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">HardcodedText</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Internationalization</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 5/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationHardcodedTextLink" onclick="reveal('explanationHardcodedText');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card17Link" onclick="hideid('card17');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Internationalization:Bidirectional Text"></a>
+<a name="RtlSymmetry"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card18" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Padding and margin symmetry</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/list_item.xml">../../src/main/res/layout/list_item.xml</a>:16</span>: <span class="message">When you define <code>paddingLeft</code> you should probably also define <code>paddingRight</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno"> 13 </span>        <span class="prefix">android:</span><span class="attribute">adjustViewBounds</span>=<span class="value">"true"</span>
+<span class="lineno"> 14 </span>        <span class="prefix">android:</span><span class="attribute">maxHeight</span>=<span class="value">"48dp"</span>
+<span class="lineno"> 15 </span>        <span class="prefix">android:</span><span class="attribute">maxWidth</span>=<span class="value">"48dp"</span>
+<span class="caretline"><span class="lineno"> 16 </span>        <span class="warning"><span class="prefix">android:</span><span class="attribute">paddingLeft</span></span>=<span class="value">"10dp"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 17 </span>        <span class="prefix">android:</span><span class="attribute">scaleType</span>=<span class="value">"centerCrop"</span> />
+<span class="lineno"> 18 </span>
+<span class="lineno"> 19 </span>    <span class="tag">&lt;LinearLayout</span><span class="attribute">
+</span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationRtlSymmetry" style="display: none;">
+If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry.<br/><br/>To suppress this error, use the issue id "RtlSymmetry" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">RtlSymmetry</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Bidirectional Text</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Internationalization</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 6/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationRtlSymmetryLink" onclick="reveal('explanationRtlSymmetry');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card18Link" onclick="hideid('card18');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="RtlHardcoded"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card19" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Using left/right instead of start/end attributes</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/list_item.xml">../../src/main/res/layout/list_item.xml</a>:16</span>: <span class="message">Consider adding <code>android:paddingStart="10dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 13 </span>        <span class="prefix">android:</span><span class="attribute">adjustViewBounds</span>=<span class="value">"true"</span>
+<span class="lineno"> 14 </span>        <span class="prefix">android:</span><span class="attribute">maxHeight</span>=<span class="value">"48dp"</span>
+<span class="lineno"> 15 </span>        <span class="prefix">android:</span><span class="attribute">maxWidth</span>=<span class="value">"48dp"</span>
+<span class="caretline"><span class="lineno"> 16 </span>        <span class="warning"><span class="prefix">android:</span><span class="attribute">paddingLeft</span></span>=<span class="value">"10dp"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 17 </span>        <span class="prefix">android:</span><span class="attribute">scaleType</span>=<span class="value">"centerCrop"</span> />
+<span class="lineno"> 18 </span>
+<span class="lineno"> 19 </span>    <span class="tag">&lt;LinearLayout</span><span class="attribute">
+</span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationRtlHardcoded" style="display: none;">
+Using <code>Gravity#LEFT</code> and <code>Gravity#RIGHT</code> can lead to problems when a layout is rendered in locales where text flows from right to left. Use <code>Gravity#START</code> and <code>Gravity#END</code> instead. Similarly, in XML <code>gravity</code> and <code>layout_gravity</code> attributes, use <code>start</code> rather than <code>left</code>.<br/>
+<br/>
+For XML attributes such as paddingLeft and <code>layout_marginLeft</code>, use <code>paddingStart</code> and <code>layout_marginStart</code>. <b>NOTE</b>: If your <code>minSdkVersion</code> is less than 17, you should add <b>both</b> the older left/right attributes <b>as well as</b> the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.<br/>
+<br/>
+(Note: For <code>Gravity#LEFT</code> and <code>Gravity#START</code>, you can use these constants even when targeting older platforms, because the <code>start</code> bitmask is a superset of the <code>left</code> bitmask. Therefore, you can use <code>gravity="start"</code> rather than <code>gravity="left|start"</code>.)<br/><br/>To suppress this error, use the issue id "RtlHardcoded" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">RtlHardcoded</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Bidirectional Text</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Internationalization</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 5/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationRtlHardcodedLink" onclick="reveal('explanationRtlHardcoded');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card19Link" onclick="hideid('card19');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="MissingIssues"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card20" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Disabled Checks</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+One or more issues were not run by lint, either 
+because the check is not enabled by default, or because 
+it was disabled with a command line flag or via one or 
+more <code>lint.xml</code> configuration files in the project directories.
+<div id="SuppressedIssues" style="display: none;"><br/><br/><div class="issue">
+<div class="id">AppLinksAutoVerifyError<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Ensures that app links are correctly set and associated with website.<br/><div class="moreinfo">More info: <a href="https://g.co/appindexing/applinks">https://g.co/appindexing/applinks</a>
+</div><br/>To suppress this error, use the issue id "AppLinksAutoVerifyError" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">AppLinksAutoVerifyWarning<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Ensures that app links are correctly set and associated with website.<br/><div class="moreinfo">More info: <a href="https://g.co/appindexing/applinks">https://g.co/appindexing/applinks</a>
+</div><br/>To suppress this error, use the issue id "AppLinksAutoVerifyWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">BackButton<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+According to the Android Design Guide,<br/>
+<br/>
+"Other platforms use an explicit back button with label to allow the user to navigate up the application's hierarchy. Instead, Android uses the main action bar's app icon for hierarchical navigation and the navigation bar's back button for temporal navigation."<br/>
+This check is not very sophisticated (it just looks for buttons with the label "Back"), so it is disabled by default to not trigger on common scenarios like pairs of Back/Next buttons to paginate through screens.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/patterns/pure-android.html">http://developer.android.com/design/patterns/pure-android.html</a>
+</div><br/>To suppress this error, use the issue id "BackButton" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">ConvertToWebp<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The WebP format is typically more compact than PNG and JPEG. As of Android 4.2.1 it supports transparency and lossless conversion as well. Note that there is a quickfix in the IDE which lets you perform conversion.<br/>
+<br/>
+Launcher icons must be in the PNG format.<br/><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "ConvertToWebp" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">EasterEgg<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+An "easter egg" is code deliberately hidden in the code, both from potential users and even from other developers. This lint check looks for code which looks like it may be hidden from sight.<br/><br/>To suppress this error, use the issue id "EasterEgg" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">FieldGetter<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Accessing a field within the class that defines a getter for that field is at least 3 times faster than calling the getter. For simple getters that do nothing other than return the field, you might want to just reference the local field directly instead.<br/>
+<br/>
+<b>NOTE</b>: As of Android 2.3 (Gingerbread), this optimization is performed automatically by Dalvik, so there is no need to change your code; this is only relevant if you are targeting older versions of Android.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#internal_get_set">http://developer.android.com/guide/practices/design/performance.html#internal_get_set</a>
+</div><br/>To suppress this error, use the issue id "FieldGetter" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">GoogleAppIndexingApiWarning<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search.<br/><div class="moreinfo">More info: <a href="https://g.co/AppIndexing/AndroidStudio">https://g.co/AppIndexing/AndroidStudio</a>
+</div><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "GoogleAppIndexingApiWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">IconExpectedSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+There are predefined sizes (for each density) for launcher icons. You should follow these conventions to make sure your icons fit in with the overall look of the platform.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div><br/>To suppress this error, use the issue id "IconExpectedSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">LogConditional<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The BuildConfig class (available in Tools 17) provides a constant, "DEBUG", which indicates whether the code is being built in release mode or in debug mode. In release mode, you typically want to strip out all the logging calls. Since the compiler will automatically remove all code which is inside a "if (false)" check, surrounding your logging calls with a check for BuildConfig.DEBUG is a good idea.<br/>
+<br/>
+If you <b>really</b> intend for the logging to be present in release mode, you can suppress this warning with a @SuppressLint annotation for the intentional logging calls.<br/><br/>To suppress this error, use the issue id "LogConditional" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">MangledCRLF<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+On Windows, line endings are typically recorded as carriage return plus newline: \r\n.<br/>
+<br/>
+This detector looks for invalid line endings with repeated carriage return characters (without newlines). Previous versions of the ADT plugin could accidentally introduce these into the file, and when editing the file, the editor could produce confusing visual artifacts.<br/><div class="moreinfo">More info: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421">https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421</a>
+</div><br/>To suppress this error, use the issue id "MangledCRLF" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">MissingRegistered<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+If a class is referenced in the manifest or in a layout file, it must also exist in the project (or in one of the libraries included by the project. This check helps uncover typos in registration names, or attempts to rename or move classes without updating the manifest file properly.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/topics/manifest/manifest-intro.html">http://developer.android.com/guide/topics/manifest/manifest-intro.html</a>
+</div><br/>To suppress this error, use the issue id "MissingRegistered" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">NegativeMargin<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Margin values should be positive. Negative values are generally a sign that you are making assumptions about views surrounding the current one, or may be tempted to turn off child clipping to allow a view to escape its parent. Turning off child clipping to do this not only leads to poor graphical performance, it also results in wrong touch event handling since touch events are based strictly on a chain of parent-rect hit tests. Finally, making assumptions about the size of strings can lead to localization problems.<br/><br/>To suppress this error, use the issue id "NegativeMargin" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">NewerVersionAvailable<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the <code>GradleDependency</code> check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also <b>much</b> slower.<br/><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "NewerVersionAvailable" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">PermissionImpliesUnsupportedChromeOsHardware<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The <code>&lt;uses-permission></code> element should not require a permission that implies an unsupported Chrome OS hardware feature. Google Play assumes that certain hardware related permissions indicate that the underlying hardware features are required by default. To fix the issue, consider declaring the corresponding uses-feature element with <code>required="false"</code> attribute.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/topic/arc/manifest.html#implied-features">https://developer.android.com/topic/arc/manifest.html#implied-features</a>
+</div><br/>To suppress this error, use the issue id "PermissionImpliesUnsupportedChromeOsHardware" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">Registered<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Activities, services and content providers should be registered in the <code>AndroidManifest.xml</code> file using <code>&lt;activity></code>, <code>&lt;service></code> and <code>&lt;provider></code> tags.<br/>
+<br/>
+If your activity is simply a parent class intended to be subclassed by other "real" activities, make it an abstract class.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/topics/manifest/manifest-intro.html">http://developer.android.com/guide/topics/manifest/manifest-intro.html</a>
+</div><br/>To suppress this error, use the issue id "Registered" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">SdCardPath<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Project lint.xml file<br/>
+<div class="explanation">
+Your code should not reference the <code>/sdcard</code> path directly; instead use <code>Environment.getExternalStorageDirectory().getPath()</code>.<br/>
+<br/>
+Similarly, do not reference the <code>/data/data/</code> path directly; it can vary in multi-user scenarios. Instead, use <code>Context.getFilesDir().getPath()</code>.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/topics/data/data-storage.html#filesExternal">http://developer.android.com/guide/topics/data/data-storage.html#filesExternal</a>
+</div><br/>To suppress this error, use the issue id "SdCardPath" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">SelectableText<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+If a <code>&lt;TextView></code> is used to display data, the user might want to copy that data and paste it elsewhere. To allow this, the <code>&lt;TextView></code> should specify <code>android:textIsSelectable="true"</code>.<br/>
+<br/>
+This lint check looks for TextViews which are likely to be displaying data: views whose text is set dynamically. This value will be ignored on platforms older than API 11, so it is okay to set it regardless of your <code>minSdkVersion</code>.<br/><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "SelectableText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">StopShip<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Using the comment <code>// STOPSHIP</code> can be used to flag code that is incomplete but checked in. This comment marker can be used to indicate that the code should not be shipped until the issue is addressed, and lint will look for these.<br/><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "StopShip" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">TypographyQuotes<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Straight single quotes and double quotes, when used as a pair, can be replaced by "curvy quotes" (or directional quotes). This can make the text more readable.<br/>
+<br/>
+Note that you should never use grave accents and apostrophes to quote, `like this'.<br/>
+<br/>
+(Also note that you should not use curvy quotes for code fragments.)<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Quotation_mark">http://en.wikipedia.org/wiki/Quotation_mark</a>
+</div><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "TypographyQuotes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UnpackedNativeCode<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This app loads native libraries using <code>System.loadLibrary()</code>.<br/>
+<br/>
+Consider adding <code>android:extractNativeLibs="false"</code> to the <code>&lt;application></code> tag in AndroidManifest.xml. Starting with Android 6.0, this will make installation faster, the app will take up less space on the device and updates will have smaller download sizes.<br/><br/>To suppress this error, use the issue id "UnpackedNativeCode" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UnsupportedChromeOsHardware<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The <code>&lt;uses-feature></code> element should not require this unsupported Chrome OS hardware feature. Any uses-feature not explicitly marked with <code>required="false"</code> is necessary on the device to be installed on. Ensure that any features that might prevent it from being installed on a Chrome OS device are reviewed and marked as not required in the manifest.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/topic/arc/manifest.html#incompat-entries">https://developer.android.com/topic/arc/manifest.html#incompat-entries</a>
+</div><br/>To suppress this error, use the issue id "UnsupportedChromeOsHardware" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UnusedIds<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.<br/><br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+<div class="issue">
+<div class="id">Wakelock<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Project lint.xml file<br/>
+<div class="explanation">
+Failing to release a wakelock properly can keep the Android device in a high power mode, which reduces battery life. There are several causes of this, such as releasing the wake lock in <code>onDestroy()</code> instead of in <code>onPause()</code>, failing to call <code>release()</code> in all possible code paths after an <code>acquire()</code>, and so on.<br/>
+<br/>
+NOTE: If you are using the lock just to keep the screen on, you should strongly consider using <code>FLAG_KEEP_SCREEN_ON</code> instead. This window flag will be correctly managed by the platform as the user moves between applications and doesn't require a special permission. See <a href="http://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_KEEP_SCREEN_ON">http://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_KEEP_SCREEN_ON</a>.<br/><br/>To suppress this error, use the issue id "Wakelock" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+</div>
+</div>
+</div>              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="SuppressedIssuesLink" onclick="reveal('SuppressedIssues');">
+List Missing Issues</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="card20Link" onclick="hideid('card20');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="SuppressInfo"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="card21" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Suppressing Warnings and Errors</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a <code>@SuppressLint</code> annotation in the Java code<br/>
+2. With a <code>tools:ignore</code> attribute in the XML file<br/>
+3. With a //noinspection comment in the source code<br/>
+4. With ignore flags specified in the <code>build.gradle</code> file, as explained below<br/>
+5. With a <code>lint.xml</code> configuration file in the project<br/>
+6. With a <code>lint.xml</code> configuration file passed to lint via the --config flag<br/>
+7. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a <code>@SuppressLint("id")</code> annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as <code>"UnusedResources"</code> or <code>{"UnusedResources","UnusedIds"}</code>, or it can be <code>"all"</code> to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning with a comment, add a <code>//noinspection id</code> comment on the line before the statement with the error.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a <code>tools:ignore="id"</code> attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the <code>xmlns:android</code> declaration:<br/>
+<code>xmlns:tools="http://schemas.android.com/tools"</code><br/>
+<br/>
+To suppress a lint warning in a <code>build.gradle</code> file, add a section like this:<br/>
+<br/>
+android {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;lintOptions {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disable 'TypographyFractions','TypographyQuotes'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+}<br/>
+<br/>
+Here we specify a comma separated list of issue id's after the disable command. You can also use <code>warning</code> or <code>error</code> instead of <code>disable</code> to change the severity of issues.<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named <code>lint.xml</code> and place it at the root directory of the module in which it applies.<br/>
+<br/>
+The format of the <code>lint.xml</code> file is something like the following:<br/>
+<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?><br/>
+&lt;lint><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Disable this given check in this project --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="IconMissingDensityFolder" severity="ignore" /><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore the ObsoleteLayoutParam issue in the given files --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="ObsoleteLayoutParam"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout/activation.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout-xlarge/activation.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore the UselessLeaf issue in the given file --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="UselessLeaf"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout/main.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Change the severity of hardcoded strings to "error" --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="HardcodedText" severity="error" /><br/>
+&lt;/lint><br/>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+<code>$ lint --ignore UnusedResources,UselessLeaf /my/project/path</code><br/>
+<br/>
+For more information, see <a href="http://g.co/androidstudio/suppressing-lint-warnings">http://g.co/androidstudio/suppressing-lint-warnings</a><br/>
+
+            </div>
+            </div>
+          </section>    </div>
+  </main>
+</div>
+</body>
+</html>
