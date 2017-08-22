@@ -36,7 +36,7 @@
         <item>decompile jar (Procyon)</item>
         <item>decompile jar (Fernflower)</item>
         <item>decompile jar (jadx)</item>
-        <item>decompile jar (Krakatau)</item>
+        <item>disassemble jar (Krakatau)</item>
         <item>cancel</item>
             
             

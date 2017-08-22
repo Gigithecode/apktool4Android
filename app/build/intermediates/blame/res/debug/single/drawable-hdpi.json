@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/debug/drawable-hdpi/folder.png",
+        "source": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-hdpi/folder.png"
+    },
+    {
+        "merged": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
+        "source": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/debug/drawable-hdpi/file.png",
+        "source": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-hdpi/file.png"
+    },
+    {
+        "merged": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/debug/drawable-hdpi/odex.png",
+        "source": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-hdpi/odex.png"
+    },
+    {
+        "merged": "/home/gigi/AndroidStudioProjects/apktool4Android/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_search.png",
+        "source": "/home/gigi/AndroidStudioProjects/apktool4Android/app/src/main/res/drawable-hdpi/ic_action_search.png"
+    }
+]
